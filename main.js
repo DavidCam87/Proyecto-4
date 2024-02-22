@@ -54,8 +54,8 @@ const ulrrss = [
     link: "https://www.linkedin.com/in/david-camu%C3%B1ez-iglesias-b9b7a1273/",
   }
 ];
-
 const sectionHref = ["hero", "aboutMeSectionConten", "techStackSectionContent", "projectsSectionContent", "contact"];
+
 for (let i = 0; i < ulList.length; i++) {
   const li = ulList[i];
   const section = sectionHref[i];
@@ -72,9 +72,10 @@ for (let i = 0; i < ulList.length; i++) {
 }
 
 
-for (const li of ulrrss) {
+for (let i = 0; i < ulrrss.length; i++) {
+  const li = ulrrss[i];
   const listItem = document.createElement('li');
-  listItem.innerHTML = `<a href="" target="_blank" rel="noopener noreferrer"><img src="${li.img}" alt="social" /></a>`;
+  listItem.innerHTML = `<a href="${li.link}" target="_blank" rel="noopener noreferrer"><img src="${li.img}" alt="social" /></a>`;
   rrssUl.appendChild(listItem);
 }
 

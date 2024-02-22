@@ -79,14 +79,17 @@ header{
   align-items: center;
 }
 .navi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   z-index: 2;
   background-color: var(--dci-colorNavMenu);
-  width: 80%;
+  width: 100%;
   padding: 20px;
 }
 .titleDiv{
-
+  margin-left: 10%;
 margin-right: auto;
 }
 .logo{
@@ -109,6 +112,7 @@ h1{
 }
 
 .RRSS{
+  margin-right: 10%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -548,7 +552,8 @@ span{
     cursor: pointer;
     color: var(--dci-btnText);
     font-size: var(--dci-size-l);
-    padding: var(--dci-padding-xxs);
+    padding: var(--dci-padding-xs);
+    margin-right: 10px;
     background-color:transparent;
     border-radius: var(--dci-radius-btn);
     border: none;
@@ -570,8 +575,7 @@ span{
     display: none;
   }
   .menu.active {
-    display: block;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -582,11 +586,17 @@ span{
     padding: 2rem;
     gap: 2rem;
     bottom: 0;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 100% rgba(0, 0, 0, 0.5);
     z-index: 3;
   }
   .menu.active li a{
   color:var(--dci-colorNavMenu);
+  }
+  .titleDiv{
+    margin-left: 15px;
+  }
+  .RRSS{
+    margin-right: 15px;
   }
   #hero{
     flex-direction: column;
