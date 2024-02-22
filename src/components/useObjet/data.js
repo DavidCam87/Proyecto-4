@@ -59,23 +59,23 @@ export const data = {
 
     {
       name: "HTML5",
-      icon: "assets/html5.svg",
+      icon: "/assets/html5.svg",
     },
     {
       name: "CSS",
-      icon: "assets/css.svg",
+      icon: "/assets/css.svg",
     },
     {
       name: "JavaScript",
-      icon: "assets/js.svg",
+      icon: "/assets/js.svg",
     },
     {
       name: "VS Code",
-      icon: "assets/vscode.svg",
+      icon: "/assets/vscode.svg",
     },
     {
       name: "GitHub",
-      icon: "assets/git.svg",
+      icon: "/assets/git.svg",
     }
   ],
   projects: [

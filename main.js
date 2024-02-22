@@ -17,7 +17,7 @@ nav.classList.add('flex_container');
 nav.classList.add('navi');
 titleDiv.classList.add('flex_container');
 titleDiv.classList.add('titleDiv');
-img.src = './assets/DCI.png';
+img.src = '/assets/DCI.png';
 img.classList.add('logo');
 headListUl.classList.add('headList');
 rrssUl.classList.add('RRSS');
@@ -42,15 +42,15 @@ document.body.appendChild(header);
 const ulList = ["Home", "Sobre Mi", "Tech Stack", "Proyectos", "Contacto"];
 const ulrrss = [
   {
-    img: "./assets/GitHub.svg",
+    img: "/assets/GitHub.svg",
     link: "https://github.com/DavidCam87",
   },
   {
-    img: "./assets/twitter.svg",
+    img: "/assets/twitter.svg",
     link: "https://twitter.com/DaCamdev",
   },
   {
-    img: "./assets/linked.svg",
+    img: "/assets/linked.svg",
     link: "https://www.linkedin.com/in/david-camu%C3%B1ez-iglesias-b9b7a1273/",
   }
 ];
@@ -121,7 +121,7 @@ const h2 = document.createElement('h2');
 h2.innerHTML = `Hola, soy <span id = "egg" class="nameColor">${data.name}</span> desarrollador Full Stack`;
 const audio = document.createElement('audio');
 audio.id = 'audio';
-audio.src = "./assets/Day One (Interstellar Theme).mp3";
+audio.src = "/assets/Day One (Interstellar Theme).mp3";
 audio.type = "audio/mpeg";
 document.body.appendChild(audio);
 presentation.appendChild(h2);
