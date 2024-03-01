@@ -1,0 +1,151 @@
+#aboutMeSectionConten{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+.divAboutMe{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  padding: 50px 20px;
+}
+.divAboutMe h3{
+  padding: 20px 0;
+  font-size: var(--dci-size-xl);
+  font-weight: bold;
+  color: var(--dci-textTitle);
+
+}
+.divAboutMe p{
+  color: var(--dci-textDark);
+  line-height: 1.6;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+.divWork{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  padding: 50px 20px;
+}
+.divWork h3{
+  padding: 20px 0;
+  font-size: var(--dci-size-xl);
+  font-weight:800;
+  color: var(--dci-textTitle);
+}
+.experience{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--dci-textDark);
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+
+}
+.position{
+  color: var(--dci-textDark);
+  font-size: var(--dci-size-sm);
+  letter-spacing: 1px;
+  line-height: 2.8;
+}
+.company{
+  color: var(--dci-textLight);
+  font-size: var(--dci-size-xs);
+  letter-spacing: 1px;
+  line-height: 2.8;
+}
+.workday{
+  width: 80px;
+  text-align: center;
+  font-size: var(--dci-size-xxs);
+  line-height: 2.6;
+  background-color: var(--dci-btnBackground);
+  color: var(--dci-btnText);
+  border-radius: 15px;
+  letter-spacing: 1px;
+  line-height: 2.8;
+}
+.date{
+  color: var(--dci-textLight);
+  font-size: var(--dci-size-xs);
+  letter-spacing: 1px;
+  line-height: 2.8;
+}
+.divEducation{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  padding: 50px 20px;
+}
+.divEducation h3{
+  padding: 20px 0;
+  font-size: var(--dci-size-xl);
+  font-weight:800;
+  color: var(--dci-textTitle);
+}
+.eduLeft{
+  gap: 15px;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--dci-textDark);
+}
+.eduLeft p{
+  color: var(--dci-textDark);
+  font-size: var(--dci-size-sm);
+  letter-spacing: 1px;
+  line-height: 2.8;
+}
+.eduLeft p:nth-child(3){
+  flex: 1;
+  text-align: right;
+  color: var(--dci-textLight);
+  font-size: var(--dci-size-xs);
+  letter-spacing: 1px;
+  line-height: 3.8;
+}
+.eduRight{
+  margin-top: 30px;
+  color: var(--dci-textDark);
+  font-size: var(--dci-size-s);
+  letter-spacing: 1px;
+  line-height: 2.8;
+}
+@media (max-width: 450px){
+
+  .divAboutMe, .divWork, .divEducation{
+    width: 100%;
+    margin-left: 0px;
+    padding: 50px 50px 50px 50px;
+  }
+  .position {
+    color: var(--dci-textDark);
+    font-size: var(--dci-size-s);
+    letter-spacing: -1px;
+    line-height: 1.8;
+    }
+  .date {
+    color: var(--dci-textLight);
+    font-size: var(--dci-size-xs);
+    letter-spacing: 4px;
+    line-height: 1.8;
+  }
+  .eduLeft p:nth-child(3){
+    flex: 0;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 2;
+   }
+  .eduRight{
+    text-align: center;
+  }
+}

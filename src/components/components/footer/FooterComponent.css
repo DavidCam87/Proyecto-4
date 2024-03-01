@@ -1,0 +1,17 @@
+.footer{
+  height: 100px;
+  border-top: 2px solid var(--dci-textLight);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer p{
+  color: var(--dci-textTitle);
+  font-size: var(--dci-size-s);
+}
+@media (max-width: 450px) {
+  .footer{
+    text-align: center;
+  }
+}

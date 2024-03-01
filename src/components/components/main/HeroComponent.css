@@ -1,0 +1,59 @@
+#hero {
+  height: 80svh;
+  justify-content: space-evenly;
+}
+.greeting{
+  width: 337px;
+}
+#egg{
+  width: 240px;
+  font-size: 30px;
+  background-image: linear-gradient(90deg, #002c5c, #bbd501);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.divImg {
+  width: 300px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.divImg::before {
+  position: absolute;
+  content: "";
+  width: 99%;
+  height: 103%;
+  background-image: linear-gradient(to right, #002c5c, #bbd501);
+  left: -3%;
+  top: -2%;
+  z-index: -1;
+  border-radius: 50%;
+}
+.avatar{ /* Para que la imagen ocupe todo el ancho del contenedor */
+  width: 280px;; /* Para que la imagen ocupe todo el ancho del contenedor */
+  border-radius: 100%;
+}
+@media (max-width: 450px){
+  #hero{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .greeting{
+    display: flex;
+    justify-content: center;
+  }
+  .divImg::before{
+    position: absolute;
+    content: "";
+    width: 295px;
+    height: 295px;
+    background-image: linear-gradient(to right, #002c5c, #bbd501);
+    left: 3px;
+    top: -7px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+}
