@@ -9,7 +9,7 @@ export function ProjectsComponent() {
   h3Projects.textContent = 'Proyectos';
   divTProyects.append(h3Projects);
   const pProjects = document.createElement('p');
-  pProjects.textContent = 'Estos son algunos de mis proyectos';
+  pProjects.textContent = 'Estos son algunos de mis proyectos.';
   divTProyects.append(pProjects);
 
   const divProject = document.createElement('div');

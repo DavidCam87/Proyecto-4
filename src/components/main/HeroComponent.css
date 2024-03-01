@@ -18,7 +18,6 @@
   position: relative;
   border-radius: 50%;
 }
-
 .divImg::before {
   position: absolute;
   content: "";

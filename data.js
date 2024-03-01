@@ -10,11 +10,11 @@ export const data = {
   avatar:
     "https://i.pinimg.com/736x/8f/c2/ad/8fc2adfb17b261162bbd9a4af5239c64.jpg",
   aboutMe:
-    "Soy David Camuñez Iglesias, 36 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diversa. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
+    "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente quepuede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
   education: {
     estudies: "E.S.O.",
     institute: "I.E.S. Inmaculada Vieira",
-    graduationYear: 2012,
+    graduationYear: "1999 - 2013",
     relevantCourses: "Full Stack Development",
   },
   workExperience: [
@@ -46,7 +46,7 @@ export const data = {
         "Venta de espacios pùblicitarios, eventos, actividades de negocio. ",
     },
     {
-      position: "Driver",
+      position: "Conductor",
       company: "Exer Oursourcing S.L.",
       startDate: "May-2005",
       endDate: "Ago-2007",
@@ -82,7 +82,7 @@ export const data = {
     {
       title: "Proyecto 1",
       description:
-        "Primer proyecto realizado usando HTML5 y CSS. usamos una buena sintaxis y porsupuesto tambien buenas practicas",
+        "Primer proyecto realizado usando HTML5 y CSS. usamos una buena sintaxis y porsupuesto tambien buenas practicas.",
       link: "https://github.com/DavidCam87/Proyecto1-david.git",
       livePrev: "https://proyecto1dci.netlify.app",
       preview:
@@ -91,7 +91,7 @@ export const data = {
     {
       title: "Proyecto 2",
       description:
-        "En este rpyecto empezamos a ver Java Script, vimos la candidad de funcionalidad y vida que le puede dar a cualquier trabajo",
+        "En este proyecto empezamos a ver Java Script, vimos la candidad de funcionalidad y vida que le puede dar a cualquier trabajo.",
       link: "https://github.com/DavidCam87/Proyecto2.git",
       livePrev: "https://proyecto2dci.netlify.app",
       preview:

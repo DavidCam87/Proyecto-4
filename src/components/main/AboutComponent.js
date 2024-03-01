@@ -60,8 +60,8 @@ export function AboutComponent() {
         } else {
           eduLeft.appendChild(p);
         }
-        if (data.education[key] == "2012") {
-          p.textContent = `📅 Jul-${data.education[key]}`;
+        if (data.education[key] == "1999 - 2013") {
+          p.textContent = `📅 ${data.education[key]}`;
           eduLeft.appendChild(p);
         }
       }
