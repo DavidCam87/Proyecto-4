@@ -33,7 +33,7 @@
   width: 280px;; /* Para que la imagen ocupe todo el ancho del contenedor */
   border-radius: 100%;
 }
-@media (max-width: 450px){
+@media (max-width: 770px){
   #hero{
     flex-direction: column;
     align-items: center;

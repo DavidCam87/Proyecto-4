@@ -78,7 +78,7 @@
   color: var(--dci-textLight);
   font-size: var(--dci-size-xs);
   letter-spacing: 1px;
-  line-height: 2.8;
+  line-height: 2;
 }
 .divEducation{
   width: 50%;
@@ -96,6 +96,8 @@
 .eduLeft{
   gap: 15px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 20px 0;
   border-bottom: 1px solid var(--dci-textDark);
 }
@@ -120,7 +122,7 @@
   letter-spacing: 1px;
   line-height: 2.8;
 }
-@media (max-width: 450px){
+@media (max-width: 770px){
 
   .divAboutMe, .divWork, .divEducation{
     width: 100%;
@@ -134,16 +136,14 @@
     line-height: 1.8;
     }
   .date {
+    text-align: end;
     color: var(--dci-textLight);
     font-size: var(--dci-size-xs);
-    letter-spacing: 4px;
     line-height: 1.8;
   }
   .eduLeft p:nth-child(3){
-    flex: 0;
-    text-align: center;
+    text-align: end;
     letter-spacing: 0;
-    line-height: 2;
    }
   .eduRight{
     text-align: center;

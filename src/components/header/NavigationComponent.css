@@ -55,7 +55,7 @@
   /* Aparece y se activa dinámicamente */
 }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .navi {
     padding: 20px 0;
     position: fixed;

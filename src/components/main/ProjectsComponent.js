@@ -1,4 +1,3 @@
-import { Buttons } from './Buttons.js';
 import { data } from '../../../data.js';
 export function ProjectsComponent() {
   const projectsSect = document.getElementById('projectsSectionContent');

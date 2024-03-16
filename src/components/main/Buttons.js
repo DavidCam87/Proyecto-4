@@ -1,4 +1,3 @@
-import { NavigationComponent } from "../header/NavigationComponent.js";
 
 export function Buttons() {
 

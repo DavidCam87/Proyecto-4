@@ -1,46 +1,30 @@
-import { HeaderComponent } from './HeaderComponent.js';
-import { MainComponent } from '../main/MainComponent.js';
-import { Buttons } from '../main/Buttons.js';
 export function NavigationComponent() {
-  const main = new MainComponent();
 
-  const header = HeaderComponent();
-  const nav = document.createElement('nav');
-  const titleDiv = document.createElement('div');
-  const img = document.createElement('img');
-  const title = document.createElement('h1');
-  const headListUl = document.createElement('ul');
-  const rrssUl = document.createElement('ul');
-  const menuBtn = document.createElement('button');
-  const closeBtn = document.createElement('button');
-  const menu = document.createElement('div');
-  nav.classList.add('flex_container');
-  nav.classList.add('navi');
-  titleDiv.classList.add('flex_container');
-  titleDiv.classList.add('titleDiv');
-  img.src = '/assets/DCI.png';
-  img.classList.add('logo');
-  title.textContent = 'David Camuñez';
-  headListUl.classList.add('headList');
-  rrssUl.classList.add('RRSS');
-  menuBtn.textContent = '≡';
-  menuBtn.classList.add('btnNav');
-  closeBtn.textContent = 'X';
-  closeBtn.classList.add('closeBtn');
-  menu.classList.add('menu');
-  nav.appendChild(titleDiv);
-  nav.appendChild(headListUl);
-  nav.appendChild(rrssUl);
-  nav.appendChild(menuBtn);
-  header.appendChild(nav);
-  titleDiv.appendChild(img);
-  titleDiv.appendChild(title);
-  header.appendChild(menu);
-  nav.appendChild(menu);
-  menu.appendChild(closeBtn);
-  const section2 = document.createElement('section');
-  section2.id = 'sobreMi';
-  document.body.appendChild(section2);
+  const headerTemplate = `
+  <header>
+    <nav class="flex_container navi">
+      <div class="flex_container titleDiv">
+        <img src="/assets/DCI.png" class="logo">
+        <h1>David Camuñez</h1>
+      </div>
+      <ul class="headList"></ul>
+      <ul class="RRSS"></ul>
+      <button class="btnNav">≡</button>
+    </nav>
+    <div class="menu">
+      <button class="closeBtn">X</button>
+    </div>
+  </header>
+`;
+  const section2Template = `<section id="sobreMi"></section>`;
+
+  document.body.innerHTML = headerTemplate + section2Template;
+  const headListUl = document.querySelector('.headList');
+  const rrssUl = document.querySelector('.RRSS');
+  const menu = document.querySelector('.menu');
+  const closeBtn = document.querySelector('.closeBtn');
+  const menuBtn = document.querySelector('.btnNav');
+  const section2 = document.getElementById('sobreMi');
 
   // añadimos el contenido de las ul y le damos funcionalidad con event listeners
   const ulList = ["Home", "Sobre Mi", "Tech Stack", "Proyectos", "Contacto"];
