@@ -55,7 +55,7 @@
   /* Aparece y se activa dinámicamente */
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   .navi {
     padding: 20px 0;
     position: fixed;
@@ -111,65 +111,9 @@
   .RRSS{
     margin-right: 15px;
   }
-  #hero{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-  }
-  .greeting{
-    display: flex;
-    justify-content: center;
-  }
+  
   main{
     margin-top: 80px;
   }
-  .divImg::before{
-    position: absolute;
-    content: "";
-    width: 295px;
-    height: 295px;
-    background-image: linear-gradient(to right, #002c5c, #bbd501);
-    left: 3px;
-    top: -7px;
-    z-index: -1;
-    border-radius: 50%;
-  }
-  .divTitle p span{
-    font-size: var(--dci-size-sm);
-  }
-
-  .divAboutMe, .divWork, .divEducation, .divTech, .divTP{
-    width: 100%;
-    margin-left: 0px;
-    padding: 50px 50px 50px 50px;
-  }
-  .date {
-    color: var(--dci-textLight);
-    font-size: var(--dci-size-xs);
-    letter-spacing: 4px;
-    line-height: 1.8;
-  }
-  .eduLeft p:nth-child(3){
-   flex: 0;
-   text-align: center;
-   letter-spacing: 0;
-   line-height: 2;
-  }
-  .eduRight{
-    text-align: center;
-  }
-  .divButtons button{
-    font-size: var(--dci-size-xs);
-  }
-
-  #contact {
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-  }
-  .footer {
-    text-align: center;
-  }
 }
+ 
