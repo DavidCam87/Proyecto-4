@@ -56,9 +56,10 @@ export function NavigationComponent() {
     listItem.innerHTML = `<a href="#${section}">${li}</a>`;
     headListUl.append(listItem);
     listItem.addEventListener('click', (event) => {
-      section2.querySelectorAll('article').forEach(section => {
+      const articles = section2.querySelectorAll('article');
+      for (const section of articles) {
         section.style.display = 'none';
-      });
+      }
       document.getElementById(section).style.display = 'flex';
     });
   }

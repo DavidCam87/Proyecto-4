@@ -28,7 +28,6 @@
   cursor: pointer;
   margin: 0 20px;
 }
-
 /* Estilos relacionados con la lista de elementos de redes sociales */
 .RRSS {
   margin-right: 10%;
@@ -42,20 +41,17 @@
   margin: 0;
   filter: opacity(0.6);
 }
-
 /* Estilos relacionados con el botón de menú */
 .btnNav {
   display: none;
   /* Aparece y se activa dinámicamente */
 }
-
 /* Estilos relacionados con el menú desplegable */
 .menu {
   display: none;
   /* Aparece y se activa dinámicamente */
 }
-
-@media (max-width: 850px) {
+@media (max-width: 1024px) {
   .navi {
     padding: 20px 0;
     position: fixed;
@@ -83,7 +79,6 @@
     top: 5px;
     padding: var(--dci-padding-xxs);
   }
- 
   .headList {
     display: none;
   }
@@ -111,9 +106,22 @@
   .RRSS{
     margin-right: 15px;
   }
-  
   main{
     margin-top: 80px;
   }
+}
+@media (max-width: 1345px) {
+  .titleDiv {
+    margin-left: 0;
+  }
+  .RRSS {
+    margin-right: 0;
+  }
+  .headList {margin: 0;
+  }
+  .headList li a{
+    font-size: var(--dci-size-s);
+  }
+
 }
  
