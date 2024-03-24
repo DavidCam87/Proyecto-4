@@ -63,7 +63,7 @@
   margin: 0;
   filter: opacity(0.6);
 }
-@media (max-width: 450px) {
+@media (max-width: 685px) {
   #contact {
     justify-content: center;
     flex-wrap: wrap;
