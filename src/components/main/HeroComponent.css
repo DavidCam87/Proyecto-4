@@ -21,16 +21,19 @@
 .divImg::before {
   position: absolute;
   content: "";
-  width: 99%;
-  height: 103%;
+  width: 106%;
+  height: 105%;
   background-image: linear-gradient(to right, #002c5c, #bbd501);
   left: -3%;
-  top: -2%;
+  top: -3%;
   z-index: -1;
   border-radius: 50%;
 }
-.avatar{ /* Para que la imagen ocupe todo el ancho del contenedor */
-  width: 280px;; /* Para que la imagen ocupe todo el ancho del contenedor */
+.avatar{/* Para que la imagen ocupe todo el ancho del contenedor */
+  object-fit: cover;
+  object-position: 0 -55px;
+  width: 300px; 
+  height: 300px;
   border-radius: 100%;
 }
 @media (max-width: 770px){
@@ -47,11 +50,11 @@
   .divImg::before{
     position: absolute;
     content: "";
-    width: 295px;
-    height: 295px;
+    width: 315px;
+    height: 315px;
     background-image: linear-gradient(to right, #002c5c, #bbd501);
-    left: 3px;
-    top: -7px;
+    left: -7px;
+    top: -8px;
     z-index: -1;
     border-radius: 50%;
   }

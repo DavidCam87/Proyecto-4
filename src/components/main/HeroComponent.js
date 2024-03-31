@@ -12,11 +12,11 @@ export function HeroComponent() {
   hello.appendChild(presentation);
   const h2 = document.createElement('h2');
   h2.innerHTML = `Hola, soy <span id = "egg" class="nameColor">${data.name}</span> estudiante de desarrollo FullStack`;
-  const audio = document.createElement('audio');
+  /* const audio = document.createElement('audio');
   audio.id = 'audio';
   audio.src = "/assets/Day One (Interstellar Theme).mp3";
   audio.type = "audio/mpeg";
-  document.body.appendChild(audio);
+  document.body.appendChild(audio); */
   presentation.appendChild(h2);
   const divimg = document.createElement('div');
   divimg.className = 'divImg';
@@ -27,13 +27,13 @@ export function HeroComponent() {
   image.alt = "Imagen de mi perfil";
   divimg.appendChild(image);
 
-  document.getElementById("egg").addEventListener("click", function () {
+  /* document.getElementById("egg").addEventListener("click", function () {
     const audio = document.getElementById("audio");
     if (audio.paused) {
       audio.play();
     } else {
       audio.pause();
     }
-  });
+  }); */
   return hero;
 }

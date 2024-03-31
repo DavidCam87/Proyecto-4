@@ -6,7 +6,7 @@
 }
 .divButtons button{
   border: none;
-  background-color:var(--dci-btnBackground) ;
+  background-color:#e4eab2 ;
   color: var(--dci-btnText);
   font-size: var(--dci-size-sm);
   cursor: pointer;

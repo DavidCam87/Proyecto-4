@@ -8,7 +8,7 @@ export const data = {
   twitter: "https://twitter.com/DaCamdev",
 
   avatar:
-    "https://i.pinimg.com/736x/8f/c2/ad/8fc2adfb17b261162bbd9a4af5239c64.jpg",
+    "./assets/david.jpg" /*"./assets/david linked.jpg" */,
   aboutMe:
     "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente quepuede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
   education: {

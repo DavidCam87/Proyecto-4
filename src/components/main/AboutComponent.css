@@ -52,6 +52,7 @@
 
 }
 .position{
+  width: 265px;
   color: var(--dci-textDark);
   font-size: var(--dci-size-sm);
   letter-spacing: 1px;
@@ -61,7 +62,7 @@
   color: var(--dci-textLight);
   font-size: var(--dci-size-xs);
   letter-spacing: 1px;
-  line-height: 2.8;
+  line-height: 2;
 }
 .workday{
   width: 80px;
@@ -79,6 +80,7 @@
   font-size: var(--dci-size-xs);
   letter-spacing: 1px;
   line-height: 2;
+  text-align: end;
 }
 .divEducation{
   width: 50%;
@@ -148,4 +150,9 @@
   .eduRight{
     text-align: center;
   }
+}
+@media (max-width: 470px){
+h1{
+  display: none;
+}
 }

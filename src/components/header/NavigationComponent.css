@@ -59,7 +59,7 @@
   }
   .btnNav {
     cursor: pointer;
-    color: var(--dci-btnText);
+    color:#BBD501;
     font-size: var(--dci-size-l);
     padding: var(--dci-padding-xs);
     margin-right: 10px;
@@ -112,7 +112,7 @@
 }
 @media (max-width: 1345px) {
   .titleDiv {
-    margin-left: 0;
+    margin-left: 18px;
   }
   .RRSS {
     margin-right: 0;
