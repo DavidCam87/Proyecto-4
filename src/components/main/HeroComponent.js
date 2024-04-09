@@ -11,7 +11,7 @@ export function HeroComponent() {
   presentation.className = 'greeting';
   hello.appendChild(presentation);
   const h2 = document.createElement('h2');
-  h2.innerHTML = `Hola, soy <span id = "egg" class="nameColor">${data.name}</span> estudiante de desarrollo FullStack`;
+  h2.innerHTML = `Hola, soy <span id = "egg" class="nameColor">${data.name}</span> programador Frontend y estudiante de desarrollo FullStack`;
   /* const audio = document.createElement('audio');
   audio.id = 'audio';
   audio.src = "/assets/Day One (Interstellar Theme).mp3";

@@ -11,7 +11,7 @@ export function TechStackComponent() {
   divTech.append(h3Tech);
 
   const pT = document.createElement('p');
-  pT.textContent = 'Estas son algunas de las tecnologías que manejo y aprendiendo mas cada dia.';
+  pT.textContent = 'Estas son algunas de las tecnologías que manejo actualmente y aprendiendo mas cada dia...';
   pT.classList.add('pT');
   divTech.append(pT);
 

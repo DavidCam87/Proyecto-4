@@ -43,10 +43,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   text-align: center;
   height: 156px;
 }
+.di:last-child img{
+  height: 95px;
+}
+.di:nth-child(6) img{
+  height: 110px;
+  background-color: #9df19d;
+  border-radius: 100px;
+}
+
 @media (max-width: 450px) {
   .divTech, .divTP{
     width: 100%;

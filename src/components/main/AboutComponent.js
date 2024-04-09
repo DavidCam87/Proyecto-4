@@ -35,6 +35,7 @@ function createWorkExperienceSection(data) {
     divS.innerHTML = experienciaHTML;
     section.appendChild(divS);
   }
+
   return section;
 }
 
@@ -48,17 +49,31 @@ function createEducationSection(data) {
   eduLeft.classList.add('eduLeft');
   const eduRight = document.createElement('div');
   eduRight.classList.add('eduRight');
+  const eduCert = document.createElement('div');
+  eduCert.classList.add('eduCert');
   section.appendChild(eduLeft);
   section.appendChild(eduRight);
+  section.appendChild(eduCert);
   for (const key in data.education) {
     const p = document.createElement('p');
     p.textContent = `${data.education[key]}`;
     if (data.education[key] === "Full Stack Development") {
+      const p = document.createElement('p');
+      p.textContent = `${data.education[key]}`;
       p.textContent = `Actualmente Estudiando ${data.education[key]} en Rock {The Code}`;
       eduRight.appendChild(p);
     } else if (data.education[key] === "1999 - 2013") {
       p.textContent = `📅 ${data.education[key]}`;
       eduLeft.appendChild(p);
+    } else if (key === "credential") {
+      const a = document.createElement('a');
+      const p = document.createElement('p');
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.href = `${data.education[key]}`;
+      a.innerHTML = `Diplomado en desarrollo FrontEnd:<strong>"Ver"</strong>`;
+      eduCert.appendChild(p);
+      p.append(a);
     } else {
       eduLeft.appendChild(p);
     }

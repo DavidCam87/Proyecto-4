@@ -8,14 +8,15 @@ export const data = {
   twitter: "https://twitter.com/DaCamdev",
 
   avatar:
-    "./assets/david.jpg" /*"./assets/david linked.jpg" */,
+    /* "./assets/david.jpg" */ /* "./assets/david linked.jpg" */"./assets/david_link.jpg",
   aboutMe:
-    "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente quepuede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
+    "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Estoy certificado en desarrollo web por The Power Rock{TheCode} el 25/04/2024. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente quepuede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
   education: {
     estudies: "E.S.O.",
     institute: "I.E.S. Inmaculada Vieira",
     graduationYear: "1999 - 2013",
     relevantCourses: "Full Stack Development",
+    credential: "https://verified.sertifier.com/es/verify/54172128285415/"
   },
   workExperience: [
     {
@@ -76,6 +77,14 @@ export const data = {
     {
       name: "GitHub",
       icon: "/assets/git.svg",
+    },
+    {
+      name: "Node.js",
+      icon: "/assets/node.svg",
+    },
+    {
+      name: "Vite",
+      icon: "/assets/vite.svg",
     }
   ],
   projects: [
@@ -100,12 +109,19 @@ export const data = {
     {
       title: "Proyecto 3",
       description:
-        "Estre proyecto aprendi como hacer llamada a una api, y como hacer una peticion de una api. Fue un desafio interesante. El resultado me encanto y senti que esto solo habia empezado.",
+        "Este proyecto aprendi como hacer llamada a una api, y como hacer una peticion de una api. Fue un desafio interesante. El resultado me encanto y senti que esto solo habia empezado.",
       link: "https://github.com/DavidCam87/Proyecto3.git",
       livePrev: "https://proyecto3dci.netlify.app",
       preview:
         "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2071",
     },
+    {
+      title: "Proyecto 4",
+      description: "Proyecto en el cual se solicito la creacion de tres juegos basicos, consolidando los conocimientos DOM y JS.Tambien usamos LocalStorage para guardar datos de algun juego.",
+      link: "https://github.com/DavidCam87/Proyecto-5.git",
+      livePrev: "https://proyecto5-gamehub.netlify.app",
+      preview: "./assets/game.jpg",
+    }
   ],
 };
 export default data;

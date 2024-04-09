@@ -103,11 +103,6 @@ a>img{
 h2{
   color: var(--dci-textTitle);
 }
-span{
-  cursor: pointer;
-}
-
-
 @media (max-width: 450px) {
 
   main{
