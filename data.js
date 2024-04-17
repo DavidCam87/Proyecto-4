@@ -83,6 +83,10 @@ export const data = {
       icon: "/assets/node.svg",
     },
     {
+      name: "MongoDB",
+      icon: "/assets/mongo.png",
+    },
+    {
       name: "Vite",
       icon: "/assets/vite.svg",
     }
