@@ -121,6 +121,13 @@ export const data = {
       link: "https://github.com/DavidCam87/Proyecto-5.git",
       livePrev: "https://proyecto5-gamehub.netlify.app",
       preview: "./assets/game.jpg",
+    },
+    {
+      title: "Proyecto 6",
+      description: "Backend. Usamos Node, Express y MongoDB para crear un servidor con acceso a BBDD y creamos la API. Hacemos un CRUD completo para BBDD. Simulamos un front con Insomnia para comprobar que esta ok",
+      link: "https://github.com/DavidCam87/Proyecto-6.git",
+      livePrev: "BackEnd, ver con Insomnia",
+      preview: "./assets/backend-1.png"
     }
   ],
 };
