@@ -135,7 +135,7 @@ export const data = {
     },
     {
       title: "Proyecto 7",
-      description: "Implementamos autenticación en Express con modelos de videojuegos, consolas y usuarios. Tokens basados en ID de usuario. Desarrollamos CRUD para usuarios, usando bcrypt y jsonwebtoken, middleware de autenticación, y isUser y isAdmin.",
+      description: "Implementamos autenticación en Express con 3 modelos. Tokens basados en ID de usuario. Desarrollamos CRUD para usuarios, usando bcrypt y jsonwebtoken, middleware de autenticación, y isUser y isAdmin.",
       link: "https://github.com/DavidCam87/Proyecto-7.git",
       livePrev: "BackEnd, ver con Insomnia",
       preview: "./assets/backend2.png"
