@@ -142,7 +142,7 @@ export const data = {
     },
     {
       title: "Proyecto 8",
-      description: "Para este proyecto de Backend utilizamos las librerias multer y cloudinary para la gestion de archivos (texto, audio, video, etc) en nuestro back, porsupuesto con todo lo aprendido anteriormente👍",
+      description: "Para este proyecto de Backend utilizamos las librerias multer y cloudinary para la gestion de archivos en nuestro back (texto, audio, video, etc), porsupuesto con todo lo aprendido anteriormente👍",
       link: "https://github.com/DavidCam87/Proyecto-8.git",
       livePrev: "BackEnd, ver con Insomnia",
       preview: "./assets/backend3.png"
