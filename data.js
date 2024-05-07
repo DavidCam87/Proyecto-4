@@ -131,8 +131,16 @@ export const data = {
       description: "Backend. Usamos Node, Express y MongoDB para crear un servidor con acceso a BBDD y creamos la API. Hacemos un CRUD completo para BBDD. Simulamos un front con Insomnia para comprobar que esta ok",
       link: "https://github.com/DavidCam87/Proyecto-6.git",
       livePrev: "BackEnd, ver con Insomnia",
-      preview: "./assets/backend-1.png"
+      preview: "./assets/backend1.png"
+    },
+    {
+      title: "Proyecto 7",
+      description: "Implementamos autenticación en Express con modelos de videojuegos, consolas y usuarios. Tokens basados en ID de usuario. Desarrollamos CRUD para usuarios, usando bcrypt y jsonwebtoken, middleware de autenticación, y isUser y isAdmin.",
+      link: "https://github.com/DavidCam87/Proyecto-7.git",
+      livePrev: "BackEnd, ver con Insomnia",
+      preview: "./assets/backend2.png"
     }
+
   ],
 };
 export default data;
