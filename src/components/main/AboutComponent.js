@@ -43,7 +43,7 @@ function createEducationSection(data) {
   const section = document.createElement('div');
   section.classList.add('divEducation');
   const h3 = document.createElement('h3');
-  h3.textContent = 'Educacion';
+  h3.textContent = 'Educación';
   section.appendChild(h3);
   const eduLeft = document.createElement('div');
   eduLeft.classList.add('eduLeft');

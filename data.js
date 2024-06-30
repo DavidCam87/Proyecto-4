@@ -10,7 +10,7 @@ export const data = {
   avatar:
     /* "./assets/david.jpg" */ /* "./assets/david linked.jpg" */"./assets/david_link.jpg",
   aboutMe:
-    "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Estoy certificado en desarrollo web por The Power Rock{TheCode} el 25/04/2024. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente quepuede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
+    "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Estoy certificado en desarrollo web por The Power Rock{TheCode} el 25/04/2024. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente que puede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
   education: {
     estudies: "E.S.O.",
     institute: "I.E.S. Inmaculada Vieira",
