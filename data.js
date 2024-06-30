@@ -89,6 +89,10 @@ export const data = {
     {
       name: "Vite",
       icon: "/assets/vite.svg",
+    },
+    {
+      name: "React",
+      icon: "/assets/react.webp",
     }
   ],
   projects: [
@@ -147,6 +151,20 @@ export const data = {
       livePrev: "BackEnd, ver con Insomnia",
       preview: "./assets/backend3.png"
     },
+    {
+      title: "Proyecto 9",
+      description: "En este proyecto usamos la libreria puppeteer para hacer scraping en otras webs y obtener la informacion que necesitamos",
+      link: "https://github.com/DavidCam87/Proyecto-9.git",
+      livePrev: "BackEnd, ver con Insomnia",
+      preview: "./assets/backend4.webp"
+    },
+    {
+      title: "Proyecto 10",
+      description: "Proyecto Backend-Frontend. Utilizamos lo aprendido anteriormente para hacer una pagina funcional. La informacion se ha obtenido mediante scrapping",
+      link: "https://github.com/DavidCam87/Proyecto-10.git",
+      livePrev: "https://proyecto-10-front.vercel.app/",
+      preview: "./assets/backend5.jpg"
+    }
 
   ],
 };
