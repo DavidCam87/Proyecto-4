@@ -37,7 +37,7 @@ export const data = {
         "conductor , labores mas administrativas como el recambio, y en ocasiones ayudante de taller.",
     },
     {
-      position: "Vendedro de espacios publicitarios ",
+      position: "Vendedor de espacios publicitarios ",
       company: "J.N.F.",
       startDate: "May-2012",
       endDate: "Ago-2013",
