@@ -123,6 +123,31 @@
   font-size: var(--dci-size-s);
   letter-spacing: 1px;
   line-height: 2.8;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid var(--dci-textDark);
+}
+.eduCert{
+  margin-top: 20px;
+  color: var(--dci-textDark);
+  font-size: var(--dci-size-s);
+  justify-content: normal;
+  letter-spacing: 1px;
+  line-height: 2.8;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid var(--dci-textDark);
+  height: 95px;
+
+}
+.eduCert p a{
+  color: var(--dci-textDark);
+  transition: all 0.4s ease;
+}
+
+.eduCert p a:hover{
+  text-decoration: underline;
+  color: var(--dci-btnText);
+  font-size: 20px;
+  transition: all 0.4s ease;
 }
 @media (max-width: 770px){
 

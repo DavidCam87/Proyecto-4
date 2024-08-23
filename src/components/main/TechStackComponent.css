@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 20px 50px;
   padding: 20px 0;
 }
 .di {
@@ -43,10 +43,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   text-align: center;
   height: 156px;
 }
+.di:last-child img{
+  height: 95px;
+}
+.di:nth-child(6) img{
+  height: 110px;
+  background-color: #9df19d;
+  border-radius: 100px;
+}
+.di:nth-child(7) img{
+  height: 110px;
+}
+
 @media (max-width: 450px) {
   .divTech, .divTP{
     width: 100%;

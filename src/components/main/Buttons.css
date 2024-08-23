@@ -12,9 +12,14 @@
   cursor: pointer;
   padding: .6rem 1.4rem;
   border-radius: var(--dci-radius-btn);
-  transition: all .3s ease-in-out;
-
+  transition: all .3s ease;
 }
+
+.divButtons button:hover{
+    transform:scale(1.2);
+    transition: all .3s ease;
+}
+
 @media (max-width: 450px) {
   .divButtons{
     font-size: var(--dci-size-xs);

@@ -3,7 +3,7 @@
   justify-content: space-evenly;
 }
 .greeting{
-  width: 337px;
+  width: 365px;
 }
 #egg{
   width: 240px;
@@ -19,7 +19,7 @@
   border-radius: 50%;
 }
 .divImg::before {
-  position: absolute;
+  /* position: absolute;
   content: "";
   width: 106%;
   height: 105%;
@@ -27,14 +27,29 @@
   left: -3%;
   top: -3%;
   z-index: -1;
+  border-radius: 50%; */
+  position: absolute;
+  content: "";
+  width: 106%;
+  height: 106%;
+  background-image: linear-gradient(to right, #002c5c, #bbd501);
+  left: -3%;
+  top: -3.7%;
+  z-index: -1;
   border-radius: 50%;
 }
 .avatar{/* Para que la imagen ocupe todo el ancho del contenedor */
   object-fit: cover;
-  object-position: 0 -55px;
+  object-position: 0 0px;
   width: 300px; 
   height: 300px;
   border-radius: 100%;
+ /*  transform: scale(3.2);
+    object-fit: contain;
+    object-position: -13px 86px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%; */
 }
 @media (max-width: 770px){
   #hero{
