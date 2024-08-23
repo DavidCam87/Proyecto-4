@@ -57,7 +57,7 @@ function createEducationSection(data) {
   for (const key in data.education) {
     const p = document.createElement('p');
     p.textContent = `${data.education[key]}`;
-    if (data.education[key] === "Full Stack Development") {
+    if (data.education[key] === "Full Stack Developer") {
       const p = document.createElement('p');
       p.textContent = `${data.education[key]}`;
       p.textContent = `Actualmente Estudiando ${data.education[key]} en Rock {The Code}`;
