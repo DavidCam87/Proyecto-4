@@ -54,40 +54,31 @@ function createEducationSection(data) {
   section.appendChild(eduLeft);
   section.appendChild(eduRight);
   section.appendChild(eduCert);
-  for (const key in data.education) {
-    const p = document.createElement('p');
-    p.textContent = `${data.education[key]}`;
-    if (data.education[key] === "Full Stack Developer") {
-      const p = document.createElement('p');
-      p.textContent = `${data.education[key]}`;
-      p.textContent = `Actualmente Estudiando ${data.education[key]} en Rock {The Code}`;
+
+  const entries = Object.entries(data.education);
+  for (const [key, value] of entries) {
+    let p = document.createElement('p');
+
+    if (value === "React") {
+      p.textContent = `Actualmente Estudiando ${value} en Rock {The Code}`;
       eduRight.appendChild(p);
-    } else if (data.education[key] === "1999 - 2013") {
-      p.textContent = `📅 ${data.education[key]}`;
+    } else if (value === "1999 - 2013") {
+      p.textContent = `📅 ${value}`;
       eduLeft.appendChild(p);
-    } else if (key === "credential") {
+    } else if (key === "credential" || key === "credential2") {
       const a = document.createElement('a');
-      const p = document.createElement('p');
       a.target = "_blank";
       a.rel = "noopener noreferrer";
-      a.href = `${data.education[key]}`;
-      a.innerHTML = `Diplomado en desarrollo FrontEnd:<strong>"Ver"</strong>`;
-      eduCert.appendChild(p);
+      a.href = value;
+      a.innerHTML = `Diplomado en desarrollo ${key === "credential" ? 'FrontEnd' : 'BackEnd'}:<strong>"Ver"</strong>`;
       p.append(a);
-    } else if (key === "credential2") {
-      const a = document.createElement('a');
-      const p = document.createElement('p');
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.href = `${data.education[key]}`;
-      a.innerHTML = `Diplomado en desarrollo BackEnd:<strong>"Ver"</strong>`;
       eduCert.appendChild(p);
-      p.append(a);
-    }
-    else {
+    } else {
+      p.textContent = value;
       eduLeft.appendChild(p);
     }
   }
+
   return section;
 }
 

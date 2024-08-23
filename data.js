@@ -16,6 +16,7 @@ export const data = {
     institute: "I.E.S. Inmaculada Vieira",
     graduationYear: "1999 - 2013",
     relevantCourses: "Full Stack Developer",
+    actualCourses: "React",
     credential: "https://verified.sertifier.com/es/verify/54172128285415/",
     credential2: "https://verified.sertifier.com/es/verify/43974174310369/"
   },
