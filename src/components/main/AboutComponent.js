@@ -74,7 +74,17 @@ function createEducationSection(data) {
       a.innerHTML = `Diplomado en desarrollo FrontEnd:<strong>"Ver"</strong>`;
       eduCert.appendChild(p);
       p.append(a);
-    } else {
+    } else if (key === "credential2") {
+      const a = document.createElement('a');
+      const p = document.createElement('p');
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.href = `${data.education[key]}`;
+      a.innerHTML = `Diplomado en desarrollo BackEnd:<strong>"Ver"</strong>`;
+      eduCert.appendChild(p);
+      p.append(a);
+    }
+    else {
       eduLeft.appendChild(p);
     }
   }

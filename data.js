@@ -15,8 +15,9 @@ export const data = {
     estudies: "E.S.O.",
     institute: "I.E.S. Inmaculada Vieira",
     graduationYear: "1999 - 2013",
-    relevantCourses: "Full Stack Development",
-    credential: "https://verified.sertifier.com/es/verify/54172128285415/"
+    relevantCourses: "Full Stack Developer",
+    credential: "https://verified.sertifier.com/es/verify/54172128285415/",
+    credential2: "https://verified.sertifier.com/es/verify/43974174310369/"
   },
   workExperience: [
     {
@@ -38,7 +39,7 @@ export const data = {
         "conductor , labores mas administrativas como el recambio, y en ocasiones ayudante de taller.",
     },
     {
-      position: "Vendedro de espacios publicitarios ",
+      position: "Vendedor de espacios publicitarios ",
       company: "J.N.F.",
       startDate: "May-2012",
       endDate: "Ago-2013",
