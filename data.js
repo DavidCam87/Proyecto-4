@@ -69,6 +69,10 @@ export const data = {
       icon: "/assets/css.svg",
     },
     {
+      name: "SCSS",
+      icon: "/assets/scss.svg",
+    },
+    {
       name: "JavaScript",
       icon: "/assets/js.svg",
     },
