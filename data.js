@@ -6,20 +6,19 @@ export const data = {
   github: "https://github.com/DavidCam87",
   linkedin: "https://www.linkedin.com/in/david-camu%C3%B1ez-iglesias-b9b7a1273/",
   twitter: "https://twitter.com/DaCamdev",
+  avatar: "/assets/david_link.jpg",
+  aboutMe: "👋 ¡Hola! Soy David Camuñez, Desarrollador FullStack, con experiencia tanto en el Frontend como en el Backend. En la parte visual me manejo bien con HTML, CSS, JavaScript, Vite y el uso del DOM, además de integrar API REST para conectar con datos externos. Recientemente terminé una formación en React y ahora estoy aprendiendo Angular para seguir ampliando mis herramientas. En el lado del servidor trabajo con Node.js, Express y MongoDB, construyendo APIs, gestionando bases de datos y desarrollando funcionalidades como autenticación con JWT o automatización de procesos con Puppeteer. Recientemente termine miformacion en The Power Rock {TheCode} y, en paralelo, desarrollo proyectos propios como freelance, lo que me permite aplicar lo aprendido en situaciones reales. Me apasiona la tecnología y siempre estoy buscando nuevas formas de crecer, aprender y crear cosas útiles.",
 
-  avatar:
-    /* "./assets/david.jpg" */ /* "./assets/david linked.jpg" */"./assets/david_link.jpg",
-  aboutMe:
-    "Soy David Camuñez Iglesias, 37 años, casado y padre de dos pequeñas. Actualmente, estoy inmerso en un curso de programación desde 2023, donde he adquirido habilidades en HTML, CSS, JavaScript, DOM, Vite, componentes JS asíncronos y API's entre otras. Estoy certificado en desarrollo web por The Power Rock{TheCode} el 25/04/2024. Mi pasión por la tecnología me impulsa a seguir aprendiendo y creciendo. Con experiencia previa en otro sector, aporto una perspectiva diferente que puede ayudar mucho en el mundo de la programacion. Busco integrarme en un equipo donde pueda contribuir con mis habilidades técnicas y seguir desarrollándome en un entorno creativo y dinámico.",
   education: {
     estudies: "E.S.O.",
     institute: "I.E.S. Inmaculada Vieira",
     graduationYear: "1999 - 2013",
     relevantCourses: "Full Stack Developer",
-    actualCourses: "React",
+    actualCourses: "Angular",
     credential: "https://verified.sertifier.com/es/verify/54172128285415/",
     credential2: "https://verified.sertifier.com/es/verify/43974174310369/"
   },
+
   workExperience: [
     {
       position: "Comercial, Recambista y Encargado de Almacen",
@@ -28,150 +27,146 @@ export const data = {
       endDate: "Actualidad",
       workday: "Fulltime",
       description:
-        "representante de la empresa para la venta de productos y fidelizacion de clientes de mayor demanda. por cambios en la direccion comence a realizar labores de recambista, y debido a mas cambios actualmente me encargo del almacen, preparacion de pedidos, recepcion de material...",
+        "Representante de la empresa para la venta de productos y fidelización de clientes de mayor demanda. Por cambios en la dirección comencé a realizar labores de recambista, y debido a más cambios actualmente me encargo del almacén, preparación de pedidos, recepción de material..."
     },
     {
-      position: "Conductor, Recambista y Ayudante de Taller ",
+      position: "Conductor, Recambista y Ayudante de Taller",
       company: "Moto Castro S.L.",
       startDate: "Sep-2013",
       endDate: "Jun-2016",
       workday: "Fulltime",
       description:
-        "conductor , labores mas administrativas como el recambio, y en ocasiones ayudante de taller.",
+        "Conductor, labores más administrativas como el recambio, y en ocasiones ayudante de taller."
     },
     {
-      position: "Vendedor de espacios publicitarios ",
+      position: "Vendedor de espacios publicitarios",
       company: "J.N.F.",
       startDate: "May-2012",
       endDate: "Ago-2013",
       workday: "Fulltime",
       description:
-        "Venta de espacios pùblicitarios, eventos, actividades de negocio. ",
+        "Venta de espacios publicitarios, eventos y actividades de negocio."
     },
     {
       position: "Conductor",
-      company: "Exer Oursourcing S.L.",
+      company: "Exer Outsourcing S.L.",
       startDate: "May-2005",
       endDate: "Ago-2007",
       workday: "Fulltime",
       description:
-        "Mantenimiento y transporte de vehiculos de alquiler",
-    },
-  ],
-  skills: [
-
-    {
-      name: "HTML5",
-      icon: "/assets/html5.svg",
-    },
-    {
-      name: "CSS",
-      icon: "/assets/css.svg",
-    },
-    {
-      name: "SCSS",
-      icon: "/assets/scss.svg",
-    },
-    {
-      name: "JavaScript",
-      icon: "/assets/js.svg",
-    },
-    {
-      name: "VS Code",
-      icon: "/assets/vscode.svg",
-    },
-    {
-      name: "GitHub",
-      icon: "/assets/git.svg",
-    },
-    {
-      name: "Node.js",
-      icon: "/assets/node.svg",
-    },
-    {
-      name: "MongoDB",
-      icon: "/assets/mongo.png",
-    },
-    {
-      name: "Vite",
-      icon: "/assets/vite.svg",
-    },
-    {
-      name: "React",
-      icon: "/assets/react.webp",
+        "Mantenimiento y transporte de vehículos de alquiler."
     }
   ],
+
+  skills: [
+    { name: "HTML5", icon: "/assets/html5.svg" },
+    { name: "CSS", icon: "/assets/css.svg" },
+    { name: "SCSS", icon: "/assets/scss.svg" },
+    { name: "JavaScript", icon: "/assets/js.svg" },
+    { name: "VS Code", icon: "/assets/vscode.svg" },
+    { name: "GitHub", icon: "/assets/git.svg" },
+    { name: "Node.js", icon: "/assets/node.svg" },
+    { name: "MongoDB", icon: "/assets/mongo.png" },
+    { name: "Vite", icon: "/assets/vite.svg" },
+    { name: "React", icon: "/assets/react.webp" },
+    { name: "Chakra UI", icon: "/assets/chakra.svg" },
+    { name: "Express", icon: "/assets/Express.svg" },
+    { name: "Cloudinary", icon: "/assets/cloudinary.svg" }
+  ],
+
   projects: [
     {
-      title: "Proyecto 1",
+      title: "Clon Tien21",
       description:
-        "Primer proyecto realizado usando HTML5 y CSS. usamos una buena sintaxis y porsupuesto tambien buenas practicas.",
+        "Primer proyecto realizado usando HTML5 y CSS. Clonamos el sitio web de Tien21. Usamos una buena sintaxis y por supuesto también buenas prácticas.",
       link: "https://github.com/DavidCam87/Proyecto1-david.git",
       livePrev: "https://proyecto1dci.netlify.app",
       preview:
-        "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWNvbW1lcmNlfGVufDB8fDB8fHww&w=500",
+        "https://ariza.es/wp-content/uploads/2023/06/tien21.jpg"
     },
     {
-      title: "Proyecto 2",
+      title: "Clon Eletrocosto",
       description:
-        "En este proyecto empezamos a ver Java Script, vimos la candidad de funcionalidad y vida que le puede dar a cualquier trabajo.",
+        "En este proyecto empezamos a ver JavaScript, copiamos la web de Eletrocosto y vimos la cantidad de funcionalidad y vida que le puede dar a cualquier trabajo.",
       link: "https://github.com/DavidCam87/Proyecto2.git",
       livePrev: "https://proyecto2dci.netlify.app",
       preview:
-        "https://plus.unsplash.com/premium_photo-1684581214880-2043e5bc8b8b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070",
+        "https://www.idealo.es/images/opengraph/25b9909e-9b7c-46c5-b549-158f2a5741b7/electrocosto.jpg"
     },
     {
-      title: "Proyecto 3",
+      title: "API Pinterest",
       description:
-        "Este proyecto aprendi como hacer llamada a una api, y como hacer una peticion de una api. Fue un desafio interesante. El resultado me encanto y senti que esto solo habia empezado.",
+        "Este proyecto aprendí a consumir API´s y cómo hacer peticiones. Fue un desafío interesante. El resultado me encantó y sentí que esto solo había empezado.",
       link: "https://github.com/DavidCam87/Proyecto3.git",
       livePrev: "https://proyecto3dci.netlify.app",
       preview:
-        "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2071",
+        "https://www.impact5.es/wp-content/uploads/2016/04/Pinterest.jpg"
     },
     {
-      title: "Proyecto 4",
-      description: "Proyecto en el cual se solicito la creacion de tres juegos basicos, consolidando los conocimientos DOM y JS.Tambien usamos LocalStorage para guardar datos de algun juego.",
+      title: "Mis Juegos",
+      description:
+        "Creo tres juegos básicos, consolidando los conocimientos DOM y JS. También usamos LocalStorage para guardar datos de algún juego.",
       link: "https://github.com/DavidCam87/Proyecto-5.git",
       livePrev: "https://proyecto5-gamehub.netlify.app",
-      preview: "./assets/game.jpg",
+      preview: "/assets/game.jpg"
     },
     {
-      title: "Proyecto 6",
-      description: "Backend. Usamos Node, Express y MongoDB para crear un servidor con acceso a BBDD y creamos la API. Hacemos un CRUD completo para BBDD. Simulamos un front con Insomnia para comprobar que esta ok",
+      title: "Servidor y BBDD",
+      description:
+        "Backend. Usamos Node, Express y MongoDB para crear un servidor con acceso a BBDD y creamos la API. Hacemos un CRUD completo para BBDD. Simulamos un front con Insomnia para comprobar que está ok.",
       link: "https://github.com/DavidCam87/Proyecto-6.git",
       livePrev: "BackEnd, ver con Insomnia",
-      preview: "./assets/backend1.png"
+      preview: "/assets/backend1.png"
     },
     {
-      title: "Proyecto 7",
-      description: "Implementamos autenticación en Express con 3 modelos. Tokens basados en ID de usuario. Desarrollamos CRUD para usuarios, usando bcrypt y jsonwebtoken, middleware de autenticación, y isUser y isAdmin.",
+      title: "Seguridad en Backend",
+      description:
+        "Implementamos autenticación en Express con 3 modelos. Tokens basados en ID de usuario. Desarrollamos CRUD para usuarios, usando bcrypt y jsonwebtoken, middleware de autenticación, y isUser e isAdmin.",
       link: "https://github.com/DavidCam87/Proyecto-7.git",
       livePrev: "BackEnd, ver con Insomnia",
-      preview: "./assets/backend2.png"
+      preview: "https://static.vecteezy.com/system/resources/previews/014/453/726/non_2x/database-with-padlock-icon-flat-style-vector.jpg"
     },
     {
-      title: "Proyecto 8",
-      description: "Para este proyecto de Backend utilizamos las librerias multer y cloudinary para la gestion de archivos en nuestro back (texto, audio, video, etc), porsupuesto con todo lo aprendido anteriormente👍",
+      title: "Gestion de Archivos en Backend",
+      description:
+        "Para este proyecto de Backend utilizamos las librerías multer y cloudinary para la gestión de archivos en nuestro back (texto, audio, video, etc.), por supuesto con todo lo aprendido anteriormente 👍",
       link: "https://github.com/DavidCam87/Proyecto-8.git",
       livePrev: "BackEnd, ver con Insomnia",
-      preview: "./assets/backend3.png"
+      preview: "/assets/backend3.png"
     },
     {
-      title: "Proyecto 9",
-      description: "En este proyecto usamos la libreria puppeteer para hacer scraping en otras webs y obtener la informacion que necesitamos",
+      title: "Scraping en Backend",
+      description:
+        "En este proyecto usamos la librería puppeteer para hacer scraping en otras webs y obtener la información que necesitamos.",
       link: "https://github.com/DavidCam87/Proyecto-9.git",
       livePrev: "BackEnd, ver con Insomnia",
-      preview: "./assets/backend4.webp"
+      preview: "/assets/backend4.webp"
     },
-    {
+    /* {
       title: "Proyecto 10",
-      description: "Proyecto Backend-Frontend. Utilizamos lo aprendido anteriormente para hacer una pagina funcional. La informacion se ha obtenido mediante scrapping",
+      description:
+        "Proyecto Backend-Frontend. Utilizamos lo aprendido anteriormente para hacer una página funcional. La información se ha obtenido mediante scraping.",
       link: "https://github.com/DavidCam87/Proyecto-10.git",
       livePrev: "https://proyecto-10-front.vercel.app/",
-      preview: "./assets/backend5.jpg"
+      preview: "/assets/backend5.jpg"
+    } */
+    {
+      title: "Taller de Motos",
+      description:
+        "Web para taller de motos con React y Chakra UI. Responsive, moderna, permite agendar citas y gestión administrativa eficiente.",
+      link: "https://github.com/DavidCam87/Proyecto-13-Front.git",
+      livePrev: "https://moto-works.netlify.app/",
+      preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OKfwjaR1f-LSRM8RDRsxH5UHrwCPdPMR8w&s"
+    },
+    {
+      title: "Heylum",
+      description:
+        "Web para pastelería/heladería hecha con React y Chakra UI. Responsive, muestra productos, ubicación, horarios y datos de contacto.",
+      link: "https://github.com/DavidCam87/Heylum.git",
+      livePrev: "https://heylum.netlify.app/",
+      preview: "https://www.heylum.es/wp-content/uploads/2023/11/logo-heylum-12.png"
     }
+  ]
+}
 
-  ],
-};
-export default data;
+export default data
