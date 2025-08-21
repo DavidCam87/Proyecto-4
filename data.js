@@ -16,7 +16,8 @@ export const data = {
     relevantCourses: "Full Stack Developer",
     actualCourses: "Angular",
     credential: "https://verified.sertifier.com/es/verify/54172128285415/",
-    credential2: "https://verified.sertifier.com/es/verify/43974174310369/"
+    credential2: "https://verified.sertifier.com/es/verify/43974174310369/",
+    credential3: "https://verified.sertifier.com/es/verify/87241237555149/?ref=email"
   },
 
   workExperience: [

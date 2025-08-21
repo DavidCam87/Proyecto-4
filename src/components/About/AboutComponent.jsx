@@ -61,6 +61,17 @@ export default function About() {
                 Ver
               </Link>
             </Text>
+            <Text>
+              Certificación Fulltack:{' '}
+              <Link
+                href={data.education.credential3}
+                isExternal
+                transition="all 0.2s ease-in-out"
+                _hover={{ color: 'green.400', textDecoration: 'underline', fontSize: 'lg' }}
+              >
+                Ver
+              </Link>
+            </Text>
           </Stack>
         </Box>
       </Stack>
