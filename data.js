@@ -77,6 +77,15 @@ export const data = {
 
   projects: [
     {
+      title: "Obrador y Heladeria Heylum",
+      description:
+        "Desarrollo y despliegue de dos aplicaciones MERN independientes (web principal y carta digital), integradas bajo un único dominio. La carta incluye una REST API con Node.js y un frontend React con panel de admin (JWT). Despliegue desacoplado en Vercel y Netlify.",
+      link: "Por motivos de confidencialidad con el cliente, el repositorio de este proyecto es privado. Sin embargo, estaré encantado de comentar la arquitectura y las decisiones técnicas.",
+      livePrev: "https://www.heylum.es/",
+      preview:
+        "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/b50047085cb251915540b931df8e81f5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=7c1a52b0&x-expires=1760565600&x-signature=yuaRdqLcy68D09%2FPsbc6RBmzhuY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a"
+    },
+    {
       title: "Clon Tien21",
       description:
         "Primer proyecto realizado usando HTML5 y CSS. Clonamos el sitio web de Tien21. Usamos una buena sintaxis y por supuesto también buenas prácticas.",
@@ -159,14 +168,6 @@ export const data = {
       livePrev: "https://moto-works.netlify.app/",
       preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OKfwjaR1f-LSRM8RDRsxH5UHrwCPdPMR8w&s"
     },
-    {
-      title: "Heylum",
-      description:
-        "Web para pastelería/heladería hecha con React y Chakra UI. Responsive, muestra productos, ubicación, horarios y datos de contacto.",
-      link: "https://github.com/DavidCam87/Heylum.git",
-      livePrev: "https://heylum.netlify.app/",
-      preview: "https://www.heylum.es/wp-content/uploads/2023/11/logo-heylum-12.png"
-    }
   ]
 }
 
