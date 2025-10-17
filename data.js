@@ -83,7 +83,7 @@ export const data = {
       link: "Por motivos de confidencialidad con el cliente, el repositorio de este proyecto es privado. Sin embargo, estaré encantado de comentar la arquitectura y las decisiones técnicas.",
       livePrev: "https://www.heylum.es/",
       preview:
-        "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/b50047085cb251915540b931df8e81f5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=7c1a52b0&x-expires=1760565600&x-signature=yuaRdqLcy68D09%2FPsbc6RBmzhuY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a"
+        "/assets/heylum.jpg"
     },
     {
       title: "Clon Tien21",
