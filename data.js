@@ -22,6 +22,15 @@ export const data = {
 
   workExperience: [
     {
+      position: "Desarrollador FullStack (Freelance / Proyectos Propios)",
+      company: "Proyectos Propios / Freelance",
+      startDate: "Mar-2024",
+      endDate: "Actualidad",
+      workday: "Fulltime",
+      description:
+        "- Diseño y desarrollo de aplicaciones web FullStack, gestionando el ciclo completo desde el boceto inicial hasta la puesta en producción.\n- Creación de interfaces de usuario (FrontEnd) interactivas y responsivas con React, React Router DOM, Vite y librerías de componentes como Chakra UI.\n- Construcción de BackEnd con Node.js y Express, desarrollando API's REST robustas e implementando bases de datos NoSQL (MongoDB) y autenticación segura (JWT).\n- Integración de servicios de terceros (Cloudinary, Puppeteer) y manejo de herramientas de IA para optimizar el ciclo de desarrollo y el despliegue en producción.\n- Uso de Git y GitHub para el control de versiones, gestión de ramas y colaboración en el ciclo de vida de los proyectos."
+    },
+    /* {
       position: "Comercial, Recambista y Encargado de Almacen",
       company: "Castro Jarana S.L.",
       startDate: "Jul-2016",
@@ -56,7 +65,7 @@ export const data = {
       workday: "Fulltime",
       description:
         "Mantenimiento y transporte de vehículos de alquiler."
-    }
+    } */
   ],
 
   skills: [

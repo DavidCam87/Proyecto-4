@@ -20,6 +20,7 @@ export default function About() {
                 <Box>
                   <Text fontWeight="bold">{exp.position}</Text>
                   <Text fontSize="sm" color="gray.600">🏢 {exp.company}</Text>
+                  <Text fontSize="sm" color="gray.600">📝 {exp.description}</Text>
                 </Box>
                 <Box textAlign="right">
                   <Badge colorScheme="green">{exp.workday}</Badge>
