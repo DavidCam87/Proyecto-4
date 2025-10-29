@@ -14,22 +14,21 @@ export default function About() {
         {/* Experiencia */}
         <Box>
           <Heading size="lg" mt={16}>Experiencia de Trabajo</Heading>
-          <Stack spacing={4} mt={4}>
-            z            {data.workExperience.map((exp, i) => (
-              <Flex key={i} justify="space-between" p={4} borderWidth="1px" borderRadius="md">
-                <Box>
-                  <Text fontWeight="bold">{exp.position}</Text>
-                  <Text fontSize="sm" color="gray.600">🏢 {exp.company}</Text>
-                  <Text fontSize="sm" color="gray.600">📝 {exp.description}</Text>
-                </Box>
-                <Box textAlign="right">
-                  <Badge colorScheme="green">{exp.workday}</Badge>
-                  <Text fontSize="sm" color="gray.500">
-                    📅 {exp.startDate} – {exp.endDate}
-                  </Text>
-                </Box>
-              </Flex>
-            ))}
+          <Stack spacing={4} mt={4}>{data.workExperience.map((exp, i) => (
+            <Flex key={i} justify="space-between" p={4} borderWidth="1px" borderRadius="md">
+              <Box flex="1" >
+                <Text fontWeight="bold">{exp.position}</Text>
+                <Text fontSize="sm" color="gray.600">🏢 {exp.company}</Text>
+                <Text fontSize="sm" color="gray.600">📝 {exp.description}</Text>
+              </Box>
+              <Box textAlign="right">
+                <Badge colorScheme="green">{exp.workday}</Badge>
+                <Text fontSize="sm" color="gray.500">
+                  📅 {exp.startDate} – {exp.endDate}
+                </Text>
+              </Box>
+            </Flex>
+          ))}
           </Stack>
         </Box>
 
