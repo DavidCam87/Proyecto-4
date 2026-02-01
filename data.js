@@ -95,6 +95,22 @@ export const data = {
         "/assets/heylum.jpg"
     },
     {
+      title: "Taller mecanico AUTOBOX",
+      description:
+        "(En desarrollo) Sistema web fullstack para gestión de talleres mecánicos.Incluye landing page con animaciones premium, sistema de reservas con calendario interactivo, panel de administración completo (CRUD servicios, gestión citas, CMS editable) y arquitectura escalable. Frontend: React + Chakra UI + Framer Motion. Backend: Node.js + Express + MongoDB + JWT + Cloudinary.",
+      link: "https://github.com/DavidCam87/AUTOBOX-Front.git",
+      livePrev: "https://autoboxen.netlify.app/",
+      preview: "/assets/autobox_icon1.jpg"
+    },
+    {
+      title: "Taberna Cartie",
+      description:
+        "(En desarrollo) Aplicación web full-stack para la gestión de restaurantes con stack MERN. Incluye web pública responsive con menú dinámico, galería, reservas en tiempo real y contenido editable. Panel admin con dashboard, CMS sin código, gestión completa de menú, reservas e imágenes (Cloudinary).Stack: React 19 + Vite, Node.js, Express, MongoDB, Tailwind CSS, JWT. API RESTful con middleware de seguridad y arquitectura escalable.",
+      link: "https://github.com/DavidCam87/Cartie-Front.git",
+      livePrev: "https://tabernacartie.netlify.app/",
+      preview: "/assets/cartielogo.jpg"
+    },
+    {
       title: "Clon Tien21",
       description:
         "Primer proyecto realizado usando HTML5 y CSS. Clonamos el sitio web de Tien21. Usamos una buena sintaxis y por supuesto también buenas prácticas.",
