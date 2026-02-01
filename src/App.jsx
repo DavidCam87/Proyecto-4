@@ -9,13 +9,14 @@ import Projects from './components/Projects/ProjectsComponent'
 import Contact from './components/Contact/ContactComponent'
 import Footer from './components/Footer/FooterComponent'
 
-
 function App() {
   return (
-    <Box>
+    <Box bg="gray.50" minH="100vh">
       <Navigation />
-      <Container maxW="container.xl" py={8}>
-        <Stack spacing={12}>
+
+      {/* Contenedor principal con padding top para el header fijo */}
+      <Container maxW="container.xl" py={8} px={{ base: 4, md: 6 }}>
+        <Stack spacing={{ base: 16, md: 20 }}>
           <Hero />
           <Buttons />
           <About />
@@ -24,6 +25,7 @@ function App() {
           <Contact />
         </Stack>
       </Container>
+
       <Footer />
     </Box>
   )
