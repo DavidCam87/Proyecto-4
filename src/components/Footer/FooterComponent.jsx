@@ -29,7 +29,7 @@ export default function Footer() {
         gap={4}
       >
         <Text fontSize="sm" color="gray.600">
-          © {currentYear} {data.name} - Todos los derechos reservados
+          © {currentYear} {data.name} — Todos los derechos reservados
         </Text>
 
         <HStack spacing={2} fontSize="sm" color="gray.600">
@@ -61,7 +61,7 @@ export default function Footer() {
         mx="auto"
         px={4}
       >
-        Portfolio diseñado y desarrollado desde cero utilizando React, Chakra UI y Framer Motion
+        Portfolio diseñado y desarrollado desde cero con React, Chakra UI y Framer Motion
       </Text>
     </MotionBox>
   )

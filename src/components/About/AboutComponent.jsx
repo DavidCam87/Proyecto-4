@@ -1,6 +1,6 @@
 import {
   Box, Heading, Text, Stack, Flex, Badge, Link,
-  SimpleGrid, Icon, VStack, HStack, Divider
+  SimpleGrid, VStack, HStack, Divider
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { motion } from 'framer-motion'
@@ -12,9 +12,7 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
+    transition: { staggerChildren: 0.2 }
   }
 }
 
@@ -123,7 +121,7 @@ export default function About() {
             </Heading>
 
             <Stack spacing={6}>
-              {/* Bootcamp - Destacado */}
+              {/* Bootcamp destacado */}
               <Box
                 p={6}
                 borderWidth="2px"
@@ -134,12 +132,7 @@ export default function About() {
               >
                 <VStack align="start" spacing={4}>
                   <HStack>
-                    <Box
-                      bg="green.500"
-                      px={3}
-                      py={1}
-                      borderRadius="full"
-                    >
+                    <Box bg="green.500" px={3} py={1} borderRadius="full">
                       <Text fontSize="xs" fontWeight="bold" color="white">
                         BOOTCAMP
                       </Text>
@@ -163,53 +156,31 @@ export default function About() {
 
                   <Divider />
 
+                  {/* Certificaciones */}
                   <Box w="full">
                     <Text fontSize="sm" fontWeight="semibold" color="gray.700" mb={3}>
                       📜 Certificaciones obtenidas:
                     </Text>
-
                     <Stack spacing={2}>
-                      <HStack justify="space-between" flexWrap="wrap">
-                        <Text fontSize="sm" fontWeight="medium">Frontend Development:</Text>
-                        <Link
-                          href={data.education.bootcamp.credential_frontend}
-                          isExternal
-                          color="blue.600"
-                          fontWeight="semibold"
-                          fontSize="sm"
-                          _hover={{ color: 'green.600', textDecoration: 'underline' }}
-                        >
-                          Ver certificado <ExternalLinkIcon mx="2px" />
-                        </Link>
-                      </HStack>
-
-                      <HStack justify="space-between" flexWrap="wrap">
-                        <Text fontSize="sm" fontWeight="medium">Backend Development:</Text>
-                        <Link
-                          href={data.education.bootcamp.credential_backend}
-                          isExternal
-                          color="blue.600"
-                          fontWeight="semibold"
-                          fontSize="sm"
-                          _hover={{ color: 'green.600', textDecoration: 'underline' }}
-                        >
-                          Ver certificado <ExternalLinkIcon mx="2px" />
-                        </Link>
-                      </HStack>
-
-                      <HStack justify="space-between" flexWrap="wrap">
-                        <Text fontSize="sm" fontWeight="medium">FullStack Development:</Text>
-                        <Link
-                          href={data.education.bootcamp.credential_fullstack}
-                          isExternal
-                          color="blue.600"
-                          fontWeight="semibold"
-                          fontSize="sm"
-                          _hover={{ color: 'green.600', textDecoration: 'underline' }}
-                        >
-                          Ver certificado <ExternalLinkIcon mx="2px" />
-                        </Link>
-                      </HStack>
+                      {[
+                        { label: 'Frontend Development', url: data.education.bootcamp.credential_frontend },
+                        { label: 'Backend Development', url: data.education.bootcamp.credential_backend },
+                        { label: 'FullStack Development', url: data.education.bootcamp.credential_fullstack },
+                      ].map(({ label, url }) => (
+                        <HStack key={label} justify="space-between" flexWrap="wrap">
+                          <Text fontSize="sm" fontWeight="medium">{label}:</Text>
+                          <Link
+                            href={url}
+                            isExternal
+                            color="blue.600"
+                            fontWeight="semibold"
+                            fontSize="sm"
+                            _hover={{ color: 'green.600', textDecoration: 'underline' }}
+                          >
+                            Ver certificado <ExternalLinkIcon mx="2px" />
+                          </Link>
+                        </HStack>
+                      ))}
                     </Stack>
                   </Box>
                 </VStack>
@@ -225,9 +196,7 @@ export default function About() {
                   bg="white"
                   boxShadow="md"
                 >
-                  <Text fontSize="sm" color="gray.500" mb={2}>
-                    Educación Básica
-                  </Text>
+                  <Text fontSize="sm" color="gray.500" mb={2}>Educación Básica</Text>
                   <Text fontWeight="semibold" fontSize="md">
                     📚 {data.education.estudies}
                   </Text>
@@ -247,14 +216,12 @@ export default function About() {
                   bg="blue.50"
                   boxShadow="md"
                 >
-                  <Text fontSize="sm" color="gray.500" mb={2}>
-                    Formación Actual
-                  </Text>
+                  <Text fontSize="sm" color="gray.500" mb={2}>Formación Actual</Text>
                   <Text fontWeight="semibold" fontSize="md" color="blue.700">
                     💻 Aprendiendo {data.education.actualCourses}
                   </Text>
                   <Text fontSize="sm" color="gray.600" mt={2}>
-                    Continuo ampliando mis conocimientos en desarrollo frontend
+                    Continúo ampliando mis conocimientos en desarrollo frontend
                   </Text>
                 </Box>
               </SimpleGrid>

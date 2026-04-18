@@ -18,20 +18,22 @@ export const data = {
   // Avatar
   avatar: "/assets/david_link.jpg",
 
+  // CV (pon aquí la ruta a tu PDF una vez lo subas a /public/assets/)
+  cv: "/assets/cv_David2024.pdf",
+
   // Descripción personal
-  aboutMe: "👋 ¡Hola! Soy David Camuñez, Desarrollador FullStack, con experiencia tanto en el Frontend como en el Backend. En la parte visual me manejo bien con HTML, CSS, JavaScript, Vite y el uso del DOM, además de integrar API REST para conectar con datos externos. Recientemente terminé una formación en React y ahora estoy aprendiendo Angular para seguir ampliando mis herramientas. En el lado del servidor trabajo con Node.js, Express y MongoDB, construyendo APIs, gestionando bases de datos y desarrollando funcionalidades como autenticación con JWT o automatización de procesos con Puppeteer. Recientemente termine mi formacion en The Power Rock {TheCode} y, en paralelo, desarrollo proyectos propios como freelance, lo que me permite aplicar lo aprendido en situaciones reales. Me apasiona la tecnología y siempre estoy buscando nuevas formas de crecer, aprender y crear cosas útiles.",
+  // NOTA: las llaves { } se han sustituido por (TheCode) para evitar que JSX las interprete como expresiones
+  aboutMe: "👋 ¡Hola! Soy David Camuñez, Desarrollador FullStack, con experiencia tanto en el Frontend como en el Backend. En la parte visual me manejo bien con HTML, CSS, JavaScript, Vite y el uso del DOM, además de integrar API REST para conectar con datos externos. Recientemente terminé una formación en React y ahora estoy aprendiendo Angular para seguir ampliando mis herramientas. En el lado del servidor trabajo con Node.js, Express y MongoDB, construyendo APIs, gestionando bases de datos y desarrollando funcionalidades como autenticación con JWT o automatización de procesos con Puppeteer. Recientemente terminé mi formación en The Power Rock (TheCode) y, en paralelo, desarrollo proyectos propios como freelance, lo que me permite aplicar lo aprendido en situaciones reales. Me apasiona la tecnología y siempre estoy buscando nuevas formas de crecer, aprender y crear cosas útiles.",
 
   // Educación
   education: {
-    // Educación básica
     estudies: "E.S.O.",
     institute: "I.E.S. Inmaculada Vieira",
     graduationYear: "1999 - 2013",
 
-    // Bootcamp
     bootcamp: {
       name: "Bootcamp Full Stack Developer",
-      school: "The Power {Rock The Code}",
+      school: "The Power Rock (TheCode)",
       period: "2024",
       description: "Formación intensiva en desarrollo web FullStack con JavaScript, React, Node.js, Express y MongoDB",
       credential_frontend: "https://verified.sertifier.com/es/verify/54172128285415/",
@@ -39,7 +41,6 @@ export const data = {
       credential_fullstack: "https://verified.sertifier.com/es/verify/87241237555149/?ref=email"
     },
 
-    // Formación actual
     actualCourses: "Angular"
   },
 
@@ -72,98 +73,115 @@ export const data = {
     { name: "Cloudinary", icon: "/assets/cloudinary.svg" }
   ],
 
-  // Proyectos destacados
-  projects: [
+  // Proyectos profesionales — se muestran destacados al inicio
+  professionalProjects: [
     {
       title: "Helena Delvando - Peritaje Social",
-      description: "Desarrollo de sitio web corporativo y marca personal para peritaje social. Optimización de Core Web Vitals, arquitectura de información y diseño responsive. Gestión de contenidos dinámica y SEO on-page para maximizar la visibilidad de los servicios periciales.",
+      description: "Desarrollo de sitio web corporativo y marca personal para peritaje social. Optimización de Core Web Vitals, arquitectura de información y diseño responsive. Gestión de contenidos dinámica y SEO on-page.",
       link: "https://github.com/DavidCam87/helena.git",
       livePrev: "http://www.helenadelvandoperitajesocial.es/",
-      preview: "/assets/peritaje-social.webp"
+      preview: "/assets/peritaje-social.webp",
+      tags: ["HTML5", "CSS3", "JavaScript", "SEO"]
     },
     {
       title: "Obrador y Heladería Heylum",
-      description: "Desarrollo y despliegue de dos aplicaciones MERN independientes (web principal y carta digital), integradas bajo un único dominio. La carta incluye una REST API con Node.js y un frontend React con panel de admin (JWT). Despliegue desacoplado en Vercel y Netlify.",
+      description: "Dos aplicaciones MERN independientes (web principal y carta digital) integradas bajo un único dominio. La carta incluye una REST API con Node.js y un frontend React con panel de admin protegido con JWT. Despliegue desacoplado en Vercel y Netlify.",
       link: "Por motivos de confidencialidad con el cliente, el repositorio de este proyecto es privado. Sin embargo, estaré encantado de comentar la arquitectura y las decisiones técnicas.",
       livePrev: "https://www.heylum.es/",
-      preview: "/assets/heylum.jpg"
+      preview: "/assets/heylum.jpg",
+      tags: ["React", "Node.js", "MongoDB", "JWT", "Vercel"]
     },
     {
       title: "Taller Mecánico AUTOBOX",
-      description: "(En desarrollo) Sistema web fullstack para gestión de talleres mecánicos. Incluye landing page con animaciones premium, sistema de reservas con calendario interactivo, panel de administración completo (CRUD servicios, gestión citas, CMS editable) y arquitectura escalable. Frontend: React + Chakra UI + Framer Motion. Backend: Node.js + Express + MongoDB + JWT + Cloudinary.",
+      description: "(En desarrollo) Sistema web fullstack para gestión de talleres mecánicos. Landing page con animaciones premium, sistema de reservas con calendario interactivo y panel de administración completo. Stack: React + Chakra UI + Framer Motion / Node.js + Express + MongoDB + JWT + Cloudinary.",
       link: "https://github.com/DavidCam87/AUTOBOX-Front.git",
       livePrev: "https://autoboxen.netlify.app/",
-      preview: "/assets/autobox_icon1.jpg"
+      preview: "/assets/autobox_icon1.jpg",
+      tags: ["React", "Chakra UI", "Framer Motion", "Node.js", "MongoDB"]
     },
     {
       title: "Taberna Cartie",
-      description: "(En desarrollo) Aplicación web full-stack para la gestión de restaurantes con stack MERN. Incluye web pública responsive con menú dinámico, galería, reservas en tiempo real y contenido editable. Panel admin con dashboard, CMS sin código, gestión completa de menú, reservas e imágenes (Cloudinary). Stack: React 19 + Vite, Node.js, Express, MongoDB, Tailwind CSS, JWT. API RESTful con middleware de seguridad y arquitectura escalable.",
+      description: "(En desarrollo) Aplicación web full-stack para gestión de restaurantes. Web pública responsive con menú dinámico, galería, reservas en tiempo real y panel admin con CMS sin código. Stack: React 19 + Vite + Tailwind CSS / Node.js + Express + MongoDB + JWT.",
       link: "https://github.com/DavidCam87/Cartie-Front.git",
       livePrev: "https://tabernacartie.netlify.app/",
-      preview: "/assets/cartielogo.jpg"
-    },
-    {
-      title: "Clon Tien21",
-      description: "Primer proyecto realizado usando HTML5 y CSS. Clonamos el sitio web de Tien21. Usamos una buena sintaxis y por supuesto también buenas prácticas.",
-      link: "https://github.com/DavidCam87/Proyecto1-david.git",
-      livePrev: "https://proyecto1dci.netlify.app",
-      preview: "https://ariza.es/wp-content/uploads/2023/06/tien21.jpg"
-    },
-    {
-      title: "Clon Electrocosto",
-      description: "En este proyecto empezamos a ver JavaScript, copiamos la web de Electrocosto y vimos la cantidad de funcionalidad y vida que le puede dar a cualquier trabajo.",
-      link: "https://github.com/DavidCam87/Proyecto2.git",
-      livePrev: "https://proyecto2dci.netlify.app",
-      preview: "https://www.idealo.es/images/opengraph/25b9909e-9b7c-46c5-b549-158f2a5741b7/electrocosto.jpg"
-    },
-    {
-      title: "API Pinterest",
-      description: "Este proyecto aprendí a consumir API's y cómo hacer peticiones. Fue un desafío interesante. El resultado me encantó y sentí que esto solo había empezado.",
-      link: "https://github.com/DavidCam87/Proyecto3.git",
-      livePrev: "https://proyecto3dci.netlify.app",
-      preview: "https://www.impact5.es/wp-content/uploads/2016/04/Pinterest.jpg"
-    },
-    {
-      title: "Mis Juegos",
-      description: "Creo tres juegos básicos, consolidando los conocimientos DOM y JS. También usamos LocalStorage para guardar datos de algún juego.",
-      link: "https://github.com/DavidCam87/Proyecto-5.git",
-      livePrev: "https://proyecto5-gamehub.netlify.app",
-      preview: "/assets/game.jpg"
-    },
-    {
-      title: "Servidor y BBDD",
-      description: "Backend. Usamos Node, Express y MongoDB para crear un servidor con acceso a BBDD y creamos la API. Hacemos un CRUD completo para BBDD. Simulamos un front con Insomnia para comprobar que está ok.",
-      link: "https://github.com/DavidCam87/Proyecto-6.git",
-      livePrev: "BackEnd, ver con Insomnia",
-      preview: "/assets/backend1.png"
-    },
-    {
-      title: "Seguridad en Backend",
-      description: "Implementamos autenticación en Express con 3 modelos. Tokens basados en ID de usuario. Desarrollamos CRUD para usuarios, usando bcrypt y jsonwebtoken, middleware de autenticación, y isUser e isAdmin.",
-      link: "https://github.com/DavidCam87/Proyecto-7.git",
-      livePrev: "BackEnd, ver con Insomnia",
-      preview: "https://static.vecteezy.com/system/resources/previews/014/453/726/non_2x/database-with-padlock-icon-flat-style-vector.jpg"
-    },
-    {
-      title: "Gestión de Archivos en Backend",
-      description: "Para este proyecto de Backend utilizamos las librerías multer y cloudinary para la gestión de archivos en nuestro back (texto, audio, video, etc.), por supuesto con todo lo aprendido anteriormente 👍",
-      link: "https://github.com/DavidCam87/Proyecto-8.git",
-      livePrev: "BackEnd, ver con Insomnia",
-      preview: "/assets/backend3.png"
-    },
-    {
-      title: "Scraping en Backend",
-      description: "En este proyecto usamos la librería puppeteer para hacer scraping en otras webs y obtener la información que necesitamos.",
-      link: "https://github.com/DavidCam87/Proyecto-9.git",
-      livePrev: "BackEnd, ver con Insomnia",
-      preview: "/assets/backend4.webp"
+      preview: "/assets/cartielogo.jpg",
+      tags: ["React 19", "Tailwind CSS", "Node.js", "MongoDB", "JWT"]
     },
     {
       title: "Taller de Motos",
       description: "Web para taller de motos con React y Chakra UI. Responsive, moderna, permite agendar citas y gestión administrativa eficiente.",
       link: "https://github.com/DavidCam87/Proyecto-13-Front.git",
       livePrev: "https://moto-works.netlify.app/",
-      preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OKfwjaR1f-LSRM8RDRsxH5UHrwCPdPMR8w&s"
+      preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OKfwjaR1f-LSRM8RDRsxH5UHrwCPdPMR8w&s",
+      tags: ["React", "Chakra UI", "Node.js", "Express"]
+    }
+  ],
+
+  // Proyectos de formación — se muestran en sección secundaria colapsable
+  trainingProjects: [
+    {
+      title: "Clon Tien21",
+      description: "Primer proyecto: clon del sitio web de Tien21 con HTML5 y CSS. Énfasis en semántica correcta y buenas prácticas.",
+      link: "https://github.com/DavidCam87/Proyecto1-david.git",
+      livePrev: "https://proyecto1dci.netlify.app",
+      preview: "https://ariza.es/wp-content/uploads/2023/06/tien21.jpg",
+      tags: ["HTML5", "CSS3"]
+    },
+    {
+      title: "Clon Electrocosto",
+      description: "Clon de Electrocosto introduciendo JavaScript: manipulación del DOM y funcionalidades interactivas.",
+      link: "https://github.com/DavidCam87/Proyecto2.git",
+      livePrev: "https://proyecto2dci.netlify.app",
+      preview: "https://www.idealo.es/images/opengraph/25b9909e-9b7c-46c5-b549-158f2a5741b7/electrocosto.jpg",
+      tags: ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      title: "API Pinterest",
+      description: "Consumo de API externa con fetch. Renderizado dinámico de resultados y manejo de promesas.",
+      link: "https://github.com/DavidCam87/Proyecto3.git",
+      livePrev: "https://proyecto3dci.netlify.app",
+      preview: "https://www.impact5.es/wp-content/uploads/2016/04/Pinterest.jpg",
+      tags: ["JavaScript", "API REST", "Fetch"]
+    },
+    {
+      title: "Mis Juegos",
+      description: "Tres juegos básicos consolidando DOM y JS. Uso de LocalStorage para persistencia de datos.",
+      link: "https://github.com/DavidCam87/Proyecto-5.git",
+      livePrev: "https://proyecto5-gamehub.netlify.app",
+      preview: "/assets/game.jpg",
+      tags: ["JavaScript", "DOM", "LocalStorage"]
+    },
+    {
+      title: "Servidor y BBDD",
+      description: "Backend con Node, Express y MongoDB. CRUD completo sobre base de datos. API probada con Insomnia.",
+      link: "https://github.com/DavidCam87/Proyecto-6.git",
+      livePrev: "BackEnd",
+      preview: "/assets/backend1.png",
+      tags: ["Node.js", "Express", "MongoDB"]
+    },
+    {
+      title: "Autenticación Backend",
+      description: "Autenticación con bcrypt y JWT. CRUD de usuarios con middleware isUser e isAdmin.",
+      link: "https://github.com/DavidCam87/Proyecto-7.git",
+      livePrev: "BackEnd",
+      preview: "https://static.vecteezy.com/system/resources/previews/014/453/726/non_2x/database-with-padlock-icon-flat-style-vector.jpg",
+      tags: ["Node.js", "JWT", "bcrypt"]
+    },
+    {
+      title: "Gestión de Archivos",
+      description: "Gestión de archivos en backend con multer y cloudinary (texto, audio, video).",
+      link: "https://github.com/DavidCam87/Proyecto-8.git",
+      livePrev: "BackEnd",
+      preview: "/assets/backend3.png",
+      tags: ["Node.js", "Multer", "Cloudinary"]
+    },
+    {
+      title: "Scraping con Puppeteer",
+      description: "Web scraping con Puppeteer para extracción automatizada de datos de sitios externos.",
+      link: "https://github.com/DavidCam87/Proyecto-9.git",
+      livePrev: "BackEnd",
+      preview: "/assets/backend4.webp",
+      tags: ["Node.js", "Puppeteer"]
     }
   ]
 }

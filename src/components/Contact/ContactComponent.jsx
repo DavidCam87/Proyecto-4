@@ -9,24 +9,9 @@ import data from '../../../data'
 const MotionBox = motion(Box)
 
 const social = [
-  {
-    name: 'GitHub',
-    icon: '/assets/GitHub.svg',
-    url: data.github,
-    color: 'gray.700'
-  },
-  {
-    name: 'Twitter/X',
-    icon: '/assets/X.svg',
-    url: data.twitter,
-    color: 'blue.400'
-  },
-  {
-    name: 'LinkedIn',
-    icon: '/assets/linkedin.svg',
-    url: data.linkedin,
-    color: 'blue.600'
-  }
+  { name: 'GitHub',     icon: '/assets/GitHub.svg',   url: data.github,   color: 'gray.700' },
+  { name: 'Twitter/X',  icon: '/assets/X.svg',         url: data.twitter,  color: 'blue.400' },
+  { name: 'LinkedIn',   icon: '/assets/linkedin.svg',  url: data.linkedin, color: 'blue.600' },
 ]
 
 export default function Contact() {
@@ -61,7 +46,7 @@ export default function Contact() {
           Estoy disponible para nuevos proyectos y oportunidades
         </Text>
 
-        {/* Información de contacto principal */}
+        {/* Contacto directo */}
         <SimpleGrid
           columns={{ base: 1, md: 2 }}
           spacing={6}
@@ -69,14 +54,8 @@ export default function Contact() {
           maxW="600px"
           mx="auto"
         >
-          <MotionBox
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Link
-              href={`mailto:${data.email}`}
-              _hover={{ textDecoration: 'none' }}
-            >
+          <MotionBox whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
+            <Link href={`mailto:${data.email}`} _hover={{ textDecoration: 'none' }}>
               <HStack
                 p={4}
                 bg="blue.50"
@@ -97,14 +76,8 @@ export default function Contact() {
             </Link>
           </MotionBox>
 
-          <MotionBox
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Link
-              href={`tel:${data.phone}`}
-              _hover={{ textDecoration: 'none' }}
-            >
+          <MotionBox whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
+            <Link href={`tel:${data.phone}`} _hover={{ textDecoration: 'none' }}>
               <HStack
                 p={4}
                 bg="green.50"
@@ -139,11 +112,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.2 }}
               >
-                <Link
-                  href={s.url}
-                  isExternal
-                  _hover={{ textDecoration: 'none' }}
-                >
+                <Link href={s.url} isExternal _hover={{ textDecoration: 'none' }}>
                   <VStack spacing={2}>
                     <Box
                       p={3}
@@ -151,21 +120,11 @@ export default function Contact() {
                       borderRadius="lg"
                       boxShadow="md"
                       transition="all 0.3s"
-                      _hover={{
-                        bg: 'gray.100',
-                        boxShadow: 'lg'
-                      }}
+                      _hover={{ bg: 'gray.100', boxShadow: 'lg' }}
                     >
-                      <Image
-                        boxSize="35px"
-                        src={s.icon}
-                        alt={s.name}
-                        filter="grayscale(0%)"
-                      />
+                      <Image boxSize="35px" src={s.icon} alt={s.name} />
                     </Box>
-                    <Text fontSize="xs" color="gray.500">
-                      {s.name}
-                    </Text>
+                    <Text fontSize="xs" color="gray.500">{s.name}</Text>
                   </VStack>
                 </Link>
               </MotionBox>
@@ -173,7 +132,7 @@ export default function Contact() {
           </HStack>
         </VStack>
 
-        {/* CTA adicional */}
+        {/* CTA */}
         <Box mt={8}>
           <Button
             as={Link}

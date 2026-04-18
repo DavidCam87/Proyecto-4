@@ -18,23 +18,34 @@ import {
   Button,
   Tag,
   AspectRatio,
-} from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { motion } from 'framer-motion';
-import data from '../../../data';
+  Collapse,
+  Flex,
+  Wrap,
+  WrapItem,
+} from '@chakra-ui/react'
+import { ExternalLinkIcon, ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import data from '../../../data'
 
-const MotionBox = motion(Box);
+const MotionBox = motion(Box)
 
+// ─────────────────────────────────────────────
+// Tarjeta de proyecto
+// ─────────────────────────────────────────────
 const ProjectCard = ({ proj, index }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const isPrivateRepo = !proj.link.startsWith('http');
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const isPrivateRepo = !proj.link.startsWith('http')
+  const isBackend = proj.livePrev === 'BackEnd'
+  const isInProgress = proj.description.toLowerCase().includes('en desarrollo')
 
   return (
     <MotionBox
+      h="full"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
     >
       <VStack
         h="full"
@@ -53,7 +64,7 @@ const ProjectCard = ({ proj, index }) => {
           borderColor: 'green.300',
         }}
       >
-        {/* Imagen del proyecto */}
+        {/* Imagen */}
         <AspectRatio ratio={16 / 9} w="full">
           <Image
             src={proj.preview}
@@ -70,25 +81,42 @@ const ProjectCard = ({ proj, index }) => {
             {proj.title}
           </Heading>
 
-          <Text
-            fontSize="sm"
-            color="gray.600"
-            noOfLines={4}
-            flex="1"
-          >
+          <Text fontSize="sm" color="gray.600" noOfLines={4} flex="1">
             {proj.description}
           </Text>
 
-          {/* Tags si el proyecto está en desarrollo */}
-          {proj.description.includes('desarrollo') && (
+          {/* Tags de tecnología */}
+          {proj.tags && (
+            <Wrap spacing={1}>
+              {proj.tags.map((tag) => (
+                <WrapItem key={tag}>
+                  <Tag size="sm" colorScheme="blue" variant="subtle">
+                    {tag}
+                  </Tag>
+                </WrapItem>
+              ))}
+            </Wrap>
+          )}
+
+          {/* Badge estado */}
+          {isInProgress && (
             <Tag colorScheme="orange" size="sm" w="fit-content">
               🚧 En desarrollo
             </Tag>
           )}
 
-          {/* Botones de acción */}
+          {/* Botones */}
           <HStack spacing={3} pt={2}>
-            {proj.livePrev.startsWith('http') ? (
+            {isBackend ? (
+              <Button
+                colorScheme="gray"
+                size="sm"
+                flex="1"
+                onClick={() => alert('Backend — Usa Insomnia/Postman para probarlo')}
+              >
+                Backend 🔧
+              </Button>
+            ) : (
               <Button
                 as={Link}
                 href={proj.livePrev}
@@ -101,15 +129,6 @@ const ProjectCard = ({ proj, index }) => {
               >
                 Ver Demo
               </Button>
-            ) : (
-              <Button
-                colorScheme="gray"
-                size="sm"
-                flex="1"
-                onClick={() => alert('Backend - Usa Insomnia/Postman para probar')}
-              >
-                Backend 🔧
-              </Button>
             )}
 
             {isPrivateRepo ? (
@@ -119,9 +138,8 @@ const ProjectCard = ({ proj, index }) => {
                 size="sm"
                 flex="1"
                 onClick={onOpen}
-                leftIcon={<ExternalLinkIcon />}
               >
-                Código
+                Privado 🔒
               </Button>
             ) : (
               <Button
@@ -142,7 +160,7 @@ const ProjectCard = ({ proj, index }) => {
         </VStack>
       </VStack>
 
-      {/* Modal para repositorios privados */}
+      {/* Modal repo privado */}
       <Modal isOpen={isOpen} onClose={onClose} isCentered size="lg">
         <ModalOverlay backdropFilter="blur(4px)" />
         <ModalContent mx={4}>
@@ -150,8 +168,7 @@ const ProjectCard = ({ proj, index }) => {
           <ModalCloseButton />
           <ModalBody>
             <VStack spacing={4} align="start">
-              <Text fontWeight="semibold">📝 Proyecto: {proj.title}</Text>
-              <Text color="gray.600">{proj.link}</Text>
+              <Text fontWeight="semibold">📝 {proj.title}</Text>
               <Box
                 p={4}
                 bg="blue.50"
@@ -161,27 +178,29 @@ const ProjectCard = ({ proj, index }) => {
                 w="full"
               >
                 <Text fontSize="sm" color="blue.800">
-                  💼 Este proyecto contiene código confidencial del cliente.
-                  Estaré encantado de discutir la arquitectura, decisiones técnicas
-                  y desafíos superados en una entrevista.
+                  {proj.link}
                 </Text>
               </Box>
             </VStack>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="blue" onClick={onClose}>
-              Entendido
-            </Button>
+            <Button colorScheme="blue" onClick={onClose}>Entendido</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
     </MotionBox>
-  );
-};
+  )
+}
 
+// ─────────────────────────────────────────────
+// Sección principal
+// ─────────────────────────────────────────────
 export default function Projects() {
+  const [showTraining, setShowTraining] = useState(false)
+
   return (
     <Box id="projects" mt={16} as="section">
+      {/* Proyectos profesionales */}
       <Heading
         size="xl"
         mb={2}
@@ -191,14 +210,70 @@ export default function Projects() {
         🚀 Proyectos Destacados
       </Heading>
       <Text mb={8} fontSize="lg" color="gray.600">
-        Algunos de mis trabajos más recientes y relevantes
+        Trabajos reales para clientes y proyectos freelance propios
       </Text>
 
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
-        {data.projects.map((proj, i) => (
-          <ProjectCard key={i} proj={proj} index={i} />
+        {data.professionalProjects.map((proj, i) => (
+          <ProjectCard key={proj.title} proj={proj} index={i} />
         ))}
       </SimpleGrid>
+
+      {/* Separador — Proyectos de formación */}
+      <Box mt={16}>
+        <Flex
+          align="center"
+          gap={4}
+          cursor="pointer"
+          onClick={() => setShowTraining(prev => !prev)}
+          _hover={{ opacity: 0.8 }}
+          transition="opacity 0.2s"
+          mb={4}
+        >
+          <Heading size="lg" color="gray.500">
+            📚 Proyectos de Formación
+          </Heading>
+          <Button
+            variant="ghost"
+            colorScheme="gray"
+            size="sm"
+            rightIcon={showTraining ? <ChevronUpIcon /> : <ChevronDownIcon />}
+          >
+            {showTraining ? 'Ocultar' : 'Ver todos'}
+          </Button>
+        </Flex>
+
+        <Text fontSize="md" color="gray.500" mb={6}>
+          Ejercicios y clones realizados durante el bootcamp para afianzar conocimientos
+        </Text>
+
+        <Collapse in={showTraining} animateOpacity>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
+            {data.trainingProjects.map((proj, i) => (
+              <ProjectCard key={proj.title} proj={proj} index={i} />
+            ))}
+          </SimpleGrid>
+        </Collapse>
+
+        {!showTraining && (
+          <Box
+            p={5}
+            borderWidth="1px"
+            borderRadius="xl"
+            borderColor="gray.200"
+            borderStyle="dashed"
+            textAlign="center"
+            cursor="pointer"
+            onClick={() => setShowTraining(true)}
+            _hover={{ borderColor: 'green.300', bg: 'green.50' }}
+            transition="all 0.2s"
+          >
+            <Text color="gray.500" fontSize="sm">
+              +{data.trainingProjects.length} proyectos de formación — haz clic para verlos
+            </Text>
+          </Box>
+        )}
+      </Box>
     </Box>
-  );
+  )
 }

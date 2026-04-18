@@ -9,9 +9,7 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.08
-    }
+    transition: { staggerChildren: 0.08 }
   }
 }
 
@@ -20,10 +18,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100
-    }
+    transition: { type: 'spring', stiffness: 100 }
   }
 }
 
@@ -46,12 +41,9 @@ export default function TechStack() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ once: true, margin: '-50px' }}
       >
-        <SimpleGrid
-          columns={{ base: 2, sm: 3, md: 4, lg: 5 }}
-          spacing={6}
-        >
+        <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={6}>
           {data.skills.map((skill, i) => (
             <Tooltip
               key={i}
@@ -70,13 +62,8 @@ export default function TechStack() {
                 boxShadow="md"
                 borderWidth="1px"
                 borderColor="gray.200"
-                transition="all 0.3s"
                 cursor="pointer"
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "xl",
-                  borderColor: "green.300"
-                }}
+                whileHover={{ scale: 1.1, boxShadow: 'xl', borderColor: 'green.300' }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Box

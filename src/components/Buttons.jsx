@@ -1,13 +1,25 @@
 import { Stack, Button } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
-const MotionButton = motion(Button)
+const MotionStack = motion(Stack)
 
 const sections = [
   { label: 'Sobre Mí', to: 'about', icon: '👤' },
   { label: 'Tech Stack', to: 'tech', icon: '💻' },
   { label: 'Proyectos', to: 'projects', icon: '🚀' }
 ]
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.1 }
+  }
+}
+
+const buttonVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
+}
 
 export default function Buttons() {
   const scrollToSection = (id) => {
@@ -16,43 +28,44 @@ export default function Buttons() {
       const offset = 80
       const elementPosition = element.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.pageYOffset - offset
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      })
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' })
     }
   }
 
   return (
-    <Stack
+    <MotionStack
       direction={{ base: 'column', sm: 'row' }}
       spacing={4}
       justify="center"
       w="full"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
     >
-      {sections.map((s, index) => (
-        <MotionButton
+      {sections.map((s) => (
+        /* Envolvemos el Button en motion.div para no mezclar las props
+           de Framer con las de Chakra */
+        <motion.div
           key={s.to}
-          size="lg"
-          colorScheme="green"
-          variant="solid"
-          onClick={() => scrollToSection(s.to)}
-          leftIcon={<span>{s.icon}</span>}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1, delay: index * 0.1 }}
+          variants={buttonVariants}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          boxShadow="md"
-          _hover={{
-            boxShadow: 'lg',
-            transform: 'translateY(-2px)',
-          }}
+          style={{ display: 'flex', flex: '1 1 auto', justifyContent: 'center' }}
         >
-          {s.label}
-        </MotionButton>
+          <Button
+            size="lg"
+            colorScheme="green"
+            variant="solid"
+            onClick={() => scrollToSection(s.to)}
+            leftIcon={<span>{s.icon}</span>}
+            boxShadow="md"
+            w={{ base: 'full', sm: 'auto' }}
+            _hover={{ boxShadow: 'lg' }}
+          >
+            {s.label}
+          </Button>
+        </motion.div>
       ))}
-    </Stack>
+    </MotionStack>
   )
 }
