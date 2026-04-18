@@ -75,6 +75,13 @@ export const data = {
   // Proyectos destacados
   projects: [
     {
+      title: "Helena Delvando - Peritaje Social",
+      description: "Desarrollo de sitio web corporativo y marca personal para peritaje social. Optimización de Core Web Vitals, arquitectura de información y diseño responsive. Gestión de contenidos dinámica y SEO on-page para maximizar la visibilidad de los servicios periciales.",
+      link: "https://github.com/DavidCam87/helena.git",
+      livePrev: "http://www.helenadelvandoperitajesocial.es/",
+      preview: "/assets/peritaje-social.webp"
+    },
+    {
       title: "Obrador y Heladería Heylum",
       description: "Desarrollo y despliegue de dos aplicaciones MERN independientes (web principal y carta digital), integradas bajo un único dominio. La carta incluye una REST API con Node.js y un frontend React con panel de admin (JWT). Despliegue desacoplado en Vercel y Netlify.",
       link: "Por motivos de confidencialidad con el cliente, el repositorio de este proyecto es privado. Sin embargo, estaré encantado de comentar la arquitectura y las decisiones técnicas.",
